@@ -3,6 +3,8 @@
 function fg_styles() {
     wp_enqueue_style( 'generals', get_template_directory_uri().'/css/generals.css' );
     wp_enqueue_style( 'social-icons', get_template_directory_uri().'/css/social-icons.css' );
+    wp_enqueue_script('jquery');
+    wp_enqueue_script( 'custom',  get_template_directory_uri().'/js/custom.js', false );
 
     if(is_page_template('page-empresa.php')){
         wp_enqueue_style( 'empresa', get_template_directory_uri().'/css/empresa.css' );
@@ -53,8 +55,13 @@ function wpb_widgets_init() {
         'after_title' => '</h3>',
     ) );
 }
+add_action( 'widgets_init', 'wpb_widgets_init' );
 
 add_theme_support( 'post-thumbnails' );
-add_action( 'widgets_init', 'wpb_widgets_init' );
+
+function wpb_custom_new_menu() {
+    register_nav_menu('header',__( 'Header' ));
+}
+add_action( 'init', 'wpb_custom_new_menu' );
 
 include_once ('widgets/icons-social-media.php');
