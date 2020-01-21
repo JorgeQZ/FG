@@ -15,11 +15,17 @@
 }
 
 .contenedor-general-productos .sliders-container .slider-tabs-content .tab .item .img-container {
-  height: 215px;
+  height: 185px;
+  min-height: 185px;
   background: none;
 }
 
+.contenedor-general-productos .sliders-container .slider-tabs-content .tab .item .img-container img {
+  width: 60%;
+}
+
 .contenedor-general-productos .sliders-container .slider-tabs-content .tab .item .text {
+  padding: 3px 12px 15px 12px;
   background-color: transparent;
 }
 
