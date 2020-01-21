@@ -43,19 +43,19 @@
                         procentec
                     </p>
                     <p class="desc">
-                        En F&G Global Equipment, somos distribuidores exclusivos de PROCENTEC para México. 
+                        En F&G Global Equipment, somos distribuidores exclusivos de PROCENTEC para México.
                         Contamos con suministro de refacciones para tus redes PROFIBUS y PROFINET.
                     </p>
                     <p class="desc">
-                        Ofrecemos asesoría para la selección de equipos para redes 
+                        Ofrecemos asesoría para la selección de equipos para redes
                         industriales en nuevos proyectos y ampliaciones.
                     </p>
                     <p class="desc">
-                        Brindamos cursos de capacitación técnica, cubriendo el uso del hardware y 
+                        Brindamos cursos de capacitación técnica, cubriendo el uso del hardware y
                         software necesario para analiar y diagnosticar tus redes industriales.
                     </p>
                     <p class="desc">
-                        Da clic en las imágenes para conocer los productos, o bien a mano derecha en el 
+                        Da clic en las imágenes para conocer los productos, o bien a mano derecha en el
                         logo de PROCENTEC para ir directamente al sitio web.
                     </p>
                 </div>

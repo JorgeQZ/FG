@@ -1,27 +1,27 @@
-.contenedor-general-productos{
+.contenedor-general-productos {
     background: #edf1f4;
-    .sliders-container{
-        .slider-tabs-content{
-            .tab{
+    .sliders-container {
+        .slider-tabs-content {
+            .tab {
                 padding-top: 20px;
-                .item{
+                .item {
                     width: 22.5%;
                     box-shadow: none;
                     background: white;
                     margin: 20px 0;
-                    .img-container{
+                    .img-container {
                         height: 215px;
                         background: none;
                     }
-                    .text{
+                    .text {
                         background-color: transparent;
-                        .title{
+                        .title {
                             color: #0367be;
                             font-size: 22px;
                             font-weight: 600;
                             margin-bottom: 5px;
                         }
-                        .description{
+                        .description {
                             color: #999999;
                             font-size: 10px;
                             line-height: 12px;
@@ -29,9 +29,9 @@
                         }
                     }
                 }
-                .info{
+                .info {
                     width: 100%;
-                    p.tit{
+                    p.tit {
                         color: #0367be;
                         font-size: 32px;
                         font-weight: 600;
@@ -40,7 +40,7 @@
                         margin: 0;
                         margin-bottom: 15px;
                     }
-                    p.desc{
+                    p.desc {
                         color: #999999;
                         font-size: 15px;
                         font-weight: 100;
