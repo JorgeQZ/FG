@@ -3,6 +3,8 @@
 function fg_styles() {
     wp_enqueue_style( 'generals', get_template_directory_uri().'/css/generals.css' );
     wp_enqueue_style( 'social-icons', get_template_directory_uri().'/css/social-icons.css' );
+    wp_enqueue_script('jquery');
+    wp_enqueue_script( 'custom',  get_template_directory_uri().'/js/custom.js', false );
 }
 add_action( 'wp_enqueue_scripts', 'fg_styles' );
 
@@ -45,8 +47,10 @@ function wpb_widgets_init() {
     ) );
 }
 
-    
- 
 add_action( 'widgets_init', 'wpb_widgets_init' );
 
+function wpb_custom_new_menu() {
+    register_nav_menu('header',__( 'Header' ));
+}
+add_action( 'init', 'wpb_custom_new_menu' );
 include_once ('widgets/icons-social-media.php');

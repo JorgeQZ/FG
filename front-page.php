@@ -16,7 +16,8 @@
     <div class="sliders-container">
 
         <div class="slider-tabs">
-            <div class="item active">
+            <div class="active-bar"></div>
+            <div class="item">
                 <img src="<?php echo get_template_directory_uri().'/img/procentec.png'?>" alt="">
             </div>
             <div class="item">
@@ -39,7 +40,9 @@
         <div class="slider-tabs-content">
             <div class="tab active">
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -51,7 +54,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -63,7 +68,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-3.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -75,7 +82,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -87,7 +96,11 @@
                     </div>
                 </div>
 
-                <div class="ver-mas">ver más</div>
+                <a href="#">
+                    <div class="ver-mas">
+                        ver más
+                    </div>
+                </a>
             </div>
             <div class="tab"></div>
         </div>
@@ -98,7 +111,7 @@
     <div class="title-section">Nuestros Lanzamientos</div>
     <div class="grid-container">
         <div class="row">
-            <div class="column"
+            <div class="column alternate cover"
                 style="background-image: url(<?php echo get_template_directory_uri().'/img/bg-1.jpg'; ?>)">
                 <div class="title">Lorem, ipsum <br> dolor</div>
                 <div class="description">
@@ -135,7 +148,8 @@
         </div>
         <div class="row">
             <div class="column  subcolumn-container">
-                <div class="subcolumn alternate cover">
+                <div class="subcolumn alternate cover"
+                    style="background-image: url(<?php echo get_template_directory_uri().'/img/pic-3.jpg'; ?>)">
                     <div class="title">Lorem, ipsum <br> dolor</div>
                     <div class="description">
                         <p>
@@ -152,7 +166,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="subcolumn alternate cover">
+                <div class="subcolumn alternate cover"
+                    style="background-image: url(<?php echo get_template_directory_uri().'/img/pic-4.jpg'; ?>)">
                     <div class="title">Lorem, ipsum <br> dolor</div>
                     <div class="description">
                         <p>
@@ -218,8 +233,11 @@
 
                 <div class="form-row">
                     <div class="privacy">
-                        <input type="checkbox">
-                        Acepto las condiciones de uso y la política de privacidad.
+                        <label for="acepto">
+                            <input type="checkbox" name="acepto" id="acepto">
+
+                            Acepto las condiciones de uso y la política de privacidad.
+                        </label>
                     </div>
                 </div>
 
