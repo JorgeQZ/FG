@@ -9,11 +9,25 @@
                     box-shadow: none;
                     background: white;
                     margin: 20px 0;
+<<<<<<< HEAD
+                    .img-container{
+                        height: 185px;
+                        min-height: 185px;
+=======
                     .img-container {
                         height: 215px;
+>>>>>>> c0e7d25495f55b9a79c5963e6105b7cd8866a54d
                         background: none;
+                        img{
+                            width: 60%;
+                        }
                     }
+<<<<<<< HEAD
+                    .text{
+                        padding: 3px 12px 15px 12px;
+=======
                     .text {
+>>>>>>> c0e7d25495f55b9a79c5963e6105b7cd8866a54d
                         background-color: transparent;
                         .title {
                             color: #0367be;

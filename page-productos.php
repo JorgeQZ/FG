@@ -16,7 +16,8 @@
     <div class="sliders-container">
 
         <div class="slider-tabs">
-            <div class="item active">
+            <div class="active-bar"></div>
+            <div class="item">
                 <img src="<?php echo get_template_directory_uri().'/img/procentec.png'?>" alt="">
             </div>
             <div class="item">
@@ -60,7 +61,9 @@
                     </p>
                 </div>
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -72,7 +75,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -84,7 +89,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-3-1.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -96,7 +103,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -109,7 +118,9 @@
                 </div>
 
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -122,7 +133,9 @@
                 </div>
 
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -135,7 +148,9 @@
                 </div>
 
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -148,7 +163,9 @@
                 </div>
 
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -161,7 +178,9 @@
                 </div>
 
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -174,7 +193,9 @@
                 </div>
 
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -187,7 +208,9 @@
                 </div>
 
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -200,7 +223,9 @@
                 </div>
 
                 <div class="item">
-                    <div class="img-container"></div>
+                    <div class="img-container">
+                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
+                    </div>
                     <div class="text">
                         <div class="title">
                             ComBricks
@@ -211,8 +236,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="ver-mas">ver más</div>
             </div>
             <div class="tab"></div>
         </div>

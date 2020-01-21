@@ -15,12 +15,27 @@
 }
 
 .contenedor-general-productos .sliders-container .slider-tabs-content .tab .item .img-container {
+<<<<<<< HEAD
+  height: 185px;
+  min-height: 185px;
+  background: none;
+=======
     height: 215px;
     background: none;
+>>>>>>> c0e7d25495f55b9a79c5963e6105b7cd8866a54d
+}
+
+.contenedor-general-productos .sliders-container .slider-tabs-content .tab .item .img-container img {
+  width: 60%;
 }
 
 .contenedor-general-productos .sliders-container .slider-tabs-content .tab .item .text {
+<<<<<<< HEAD
+  padding: 3px 12px 15px 12px;
+  background-color: transparent;
+=======
     background-color: transparent;
+>>>>>>> c0e7d25495f55b9a79c5963e6105b7cd8866a54d
 }
 
 .contenedor-general-productos .sliders-container .slider-tabs-content .tab .item .text .title {
