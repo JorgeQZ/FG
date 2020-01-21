@@ -49,7 +49,10 @@
                             +52 (81) 20 86 29 29
                         </a>
                     </div>
-                    <div class="phones-icon"></div>
+                    <div class="phones-icon">
+                        <img src="<?php echo get_template_directory_uri().'/img/phone.png'?>" alt="">
+
+                    </div>
                 </div>
                 <div class="social-links">
                     <a href="#" target="_blank">
