@@ -1,0 +1,66 @@
+.contenedor-general-empresa{
+    padding: 40px 0;
+    width: 85%;
+    margin: 0 auto;
+    p.encabezado{
+        color: #f19107;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    p.desc{
+        color: #999999;
+        font-size: 15px;
+        margin: 0;
+        font-weight: lighter;
+    }
+
+
+
+    .contenedor-mision-vision{
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        .cont-info{
+            width: 63%;
+            margin-right: 35px;
+            .item{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 130px; /*19.5*/
+                }
+                div{
+                    margin-left: 50px;
+                    p.tit{
+                        color: #f19107;
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        margin: 0;
+                        margin-bottom: 5px;
+                    }
+                    p.desc{
+                        color: #999999;
+                        font-size: 15px;
+                        margin: 0;
+                        font-weight: lighter;
+                    }
+                }
+                &:first-child{
+                    margin-bottom: 95px;
+                }
+            }
+        }
+        .cont-img{
+            width: 37%;
+            img{
+                width: 100%;
+                max-width: 500px;
+            }
+        }
+    }
+
+}
