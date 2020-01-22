@@ -15,6 +15,12 @@
             <img src="<?php echo get_template_directory_uri().'/img/Logo.png' ?>" alt="">
         </a>
 
+        <div class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <div class="nav-container">
             <?php 
             $conf = [

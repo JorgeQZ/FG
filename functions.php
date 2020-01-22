@@ -61,6 +61,7 @@ add_theme_support( 'post-thumbnails' );
 
 function wpb_custom_new_menu() {
     register_nav_menu('header',__( 'Header' ));
+    register_nav_menu('footer',__( 'Footer' ));
 }
 add_action( 'init', 'wpb_custom_new_menu' );
 

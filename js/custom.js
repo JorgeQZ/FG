@@ -10,11 +10,7 @@ $(document).ready(function() {
         $('.active-bar').animate({
             'left': move + 'px'
         }, 200)
-
-
         $('.slider-tabs-content .tab').removeClass('active');
         $('.slider-tabs-content .tab').eq((i - 1)).addClass('active');
-
-        console.log(i);
     });
 });

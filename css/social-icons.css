@@ -15,7 +15,7 @@
   height: 40px;
   margin: 0;
   margin-right: 15px;
-  background-color: #f6891f;
+  background-color: #ff9900;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,11 +26,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.social-container a .item:hover img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.social-container a .item:hover {
+  background-color: #ff7200;
 }
 
 .social-container a .item img {
