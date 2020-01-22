@@ -40,60 +40,74 @@
         <div class="slider-tabs-content">
             <div class="tab active">
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                ComBricks
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Mercury 7"
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
+
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-3.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-3.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Mercury 10"
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Atlas
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <a href="#">
@@ -102,62 +116,77 @@
                     </div>
                 </a>
             </div>
-            <div class="tab ">
+
+            <div class="tab">
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                ComBricks
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Mercury 7"
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
+
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-3.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-3.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Mercury 10"
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Atlas
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <a href="#">
@@ -166,62 +195,76 @@
                     </div>
                 </a>
             </div>
-            <div class="tab ">
+            <div class="tab">
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                ComBricks
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Mercury 7"
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
+
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-3.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-3.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Mercury 10"
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Atlas
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <a href="#">
@@ -230,62 +273,76 @@
                     </div>
                 </a>
             </div>
-            <div class="tab ">
+            <div class="tab">
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                ComBricks
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Mercury 7"
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
+
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-3.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-3.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Mercury 10"
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Atlas
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <a href="#">
@@ -294,62 +351,76 @@
                     </div>
                 </a>
             </div>
-            <div class="tab ">
+            <div class="tab">
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                ComBricks
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Mercury 7"
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
+
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-3.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-3.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Mercury 10"
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <div class="img-container">
-                        <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="title">
-                            ComBricks
+                    <a href="#" target="_blank">
+                        <div class="img-container">
+                            <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
                         </div>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <div class="text">
+                            <div class="title">
+                                Atlas
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <a href="#">
@@ -366,7 +437,7 @@
     <div class="title-section">Nuestros Lanzamientos</div>
     <div class="grid-container">
         <div class="row">
-            <div class="column alternate cover"
+            <div class="column alternate"
                 style="background-image: url(<?php echo get_template_directory_uri().'/img/bg-1.jpg'; ?>)">
                 <div class="title">Lorem, ipsum <br> dolor</div>
                 <div class="description">
@@ -382,8 +453,11 @@
                         Ver más
                     </div>
                 </a>
+                <div class="cover"></div>
+                <div class="cover alternate"></div>
+
             </div>
-            <div class="column alternate cover"
+            <div class="column alternate "
                 style="background-image: url(<?php echo get_template_directory_uri().'/img/bg-2.jpg'; ?>)">
                 <div class="title">Lorem, ipsum <br> dolor</div>
                 <div class="description">
@@ -399,11 +473,15 @@
                         Ver más
                     </div>
                 </a>
+
+                <div class="cover"></div>
+                <div class="cover alternate"></div>
+
             </div>
         </div>
         <div class="row">
             <div class="column subcolumn-container">
-                <div class="subcolumn alternate cover"
+                <div class="subcolumn alternate"
                     style="background-image: url(<?php echo get_template_directory_uri().'/img/pic-3.jpg'; ?>)">
                     <div class="title">Lorem, ipsum <br> dolor</div>
                     <div class="description">
@@ -420,8 +498,10 @@
                             Ver más
                         </div>
                     </a>
+                    <div class="cover"></div>
+                    <div class="cover alternate"></div>
                 </div>
-                <div class="subcolumn alternate cover"
+                <div class="subcolumn alternate"
                     style="background-image: url(<?php echo get_template_directory_uri().'/img/pic-4.jpg'; ?>)">
                     <div class="title">Lorem, ipsum <br> dolor</div>
                     <div class="description">
@@ -438,9 +518,12 @@
                             Ver más
                         </div>
                     </a>
+                    <div class="cover"></div>
+                    <div class="cover alternate"></div>
+
                 </div>
             </div>
-            <div class="column alternate cover"
+            <div class="column alternate"
                 style="background-image: url(<?php echo get_template_directory_uri().'/img/pic-5.jpg'; ?>)">
                 <div class="title">Lorem, ipsum <br> dolor</div>
                 <div class="description">
@@ -457,6 +540,9 @@
                         Ver más
                     </div>
                 </a>
+                <div class="cover"></div>
+                <div class="cover alternate"></div>
+
             </div>
         </div>
     </div>
