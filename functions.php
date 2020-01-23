@@ -1,10 +1,19 @@
 <?php 
 
 function fg_styles() {
+    wp_enqueue_style( 'header', get_template_directory_uri().'/css/header.css' );
+    wp_enqueue_style( 'footer', get_template_directory_uri().'/css/footer.css' );
+
+    
+    
     wp_enqueue_style( 'generals', get_template_directory_uri().'/css/generals.css' );
     wp_enqueue_style( 'social-icons', get_template_directory_uri().'/css/social-icons.css' );
     wp_enqueue_script('jquery');
     wp_enqueue_script( 'custom',  get_template_directory_uri().'/js/custom.js', false );
+
+    if(is_page_template('front-page.php')){
+        wp_enqueue_style( 'front-page', get_template_directory_uri().'/css/front-page.css' );
+    }
 
     if(is_page_template('page-empresa.php')){
         wp_enqueue_style( 'empresa', get_template_directory_uri().'/css/empresa.css' );
@@ -12,6 +21,10 @@ function fg_styles() {
 
     if(is_page_template('page-productos.php')){
         wp_enqueue_style( 'productos', get_template_directory_uri().'/css/productos.css' );
+    }
+
+    if(is_page_template('page-contacto.php')){
+        wp_enqueue_style( 'contacto', get_template_directory_uri().'/css/contacto.css' );
     }
 
 }

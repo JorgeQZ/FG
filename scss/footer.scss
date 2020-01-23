@@ -1,0 +1,87 @@
+@import 'variables';
+// Footer
+@media screen and (min-width: 320px) {
+    footer {
+        background-color: #333333;
+        a {
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            font-weight: 100;
+            transition: all 0.1s;
+            &:hover {
+                color: $accent-color !important;
+            }
+        }
+        .footer-container {
+            margin: 0 auto;
+            padding: 2% 6%;
+            .widget-area {
+                max-width: 25%;
+                box-sizing: border-box;
+                .widget-title {
+                    color: $accent-color;
+                }
+                .menu {
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        margin-bottom: 7px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .footer-bottom {
+            background-color: #252726;
+            padding: 5px 6%;
+            text-align: center;
+            color: #636464;
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (min-width: 880px) {
+    footer {
+        background-color: #333333;
+        a {
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            font-weight: 100;
+            transition: all 0.1s;
+            &:hover {
+                color: $accent-color !important;
+            }
+        }
+        .footer-container {
+            margin: 0 auto;
+            padding: 2% 6%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            .widget-area {
+                max-width: 25%;
+                .widget-title {
+                    color: $accent-color;
+                }
+                .menu {
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        margin-bottom: 7px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .footer-bottom {
+            background-color: #252726;
+            padding: 5px 6%;
+            text-align: center;
+            color: #636464;
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@media screen and (min-width: 320px) {
+  footer {
+    background-color: #333333;
+  }
+  footer a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+  footer a:hover {
+    color: #ff9900 !important;
+  }
+  footer .footer-container {
+    margin: 0 auto;
+    padding: 2% 6%;
+  }
+  footer .footer-container .widget-area {
+    max-width: 25%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  footer .footer-container .widget-area .widget-title {
+    color: #ff9900;
+  }
+  footer .footer-container .widget-area .menu {
+    padding: 0;
+    list-style: none;
+  }
+  footer .footer-container .widget-area .menu li {
+    margin-bottom: 7px;
+    cursor: pointer;
+  }
+  footer .footer-bottom {
+    background-color: #252726;
+    padding: 5px 6%;
+    text-align: center;
+    color: #636464;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  footer {
+    background-color: #333333;
+  }
+  footer a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+  footer a:hover {
+    color: #ff9900 !important;
+  }
+  footer .footer-container {
+    margin: 0 auto;
+    padding: 2% 6%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-container .widget-area {
+    max-width: 25%;
+  }
+  footer .footer-container .widget-area .widget-title {
+    color: #ff9900;
+  }
+  footer .footer-container .widget-area .menu {
+    padding: 0;
+    list-style: none;
+  }
+  footer .footer-container .widget-area .menu li {
+    margin-bottom: 7px;
+    cursor: pointer;
+  }
+  footer .footer-bottom {
+    background-color: #252726;
+    padding: 5px 6%;
+    text-align: center;
+    color: #636464;
+    font-size: 12px;
+  }
+}

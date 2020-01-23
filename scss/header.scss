@@ -1,0 +1,393 @@
+@import 'variables';
+// Header
+@media screen and (min-width: 320px) {
+    header {
+        background-color: #fff;
+        padding: 0 6%;
+        // display: flex;
+        // align-items: flex-end;
+        // justify-content: space-between;
+        .brand-logo {
+            padding: 10px;
+            img {
+                width: 120px;
+            }
+        }
+        .nav-container {
+            // display: flex;
+            // align-items: flex-end;
+            // justify-content: flex-end;
+            .menu {
+                .menu-content {
+                    margin: 0;
+                    padding: 0;
+                    // display: flex;
+                    list-style: none;
+                    li {
+                        position: relative;
+                        padding: 10px 20px;
+                        transition: $time;
+                        &:not(:last-child) {}
+                        &:hover,
+                        &.current_page_item {
+                            background-color: $accent-color;
+                            &:before {
+                                position: absolute;
+                                content: "";
+                                width: 100%;
+                                top: 100%;
+                                height: 5px;
+                                z-index: 1;
+                                left: 0;
+                                background-color: $accent-alternate;
+                            }
+                            a {
+                                color: white;
+                            }
+                        }
+                        a {
+                            transition: $time;
+                            font-weight: normal;
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+            .header-social-container {
+                margin-left: 20px;
+                .phones-container {
+                    display: flex;
+                    margin-bottom: 10px;
+                    .phones-numbers {
+                        padding: 4px 7px;
+                        background-color: #373942;
+                        position: relative;
+                        border-bottom: 1px solid #2b2a2f;
+                        &::after {
+                            content: '';
+                            border-top: 20px solid transparent;
+                            border-left: 20px solid transparent;
+                            border-bottom: 20px solid transparent;
+                            border-right: 20px solid #373942;
+                            position: absolute;
+                            right: 100%;
+                            top: 0;
+                        }
+                        &::before {
+                            content: '';
+                            border-top: 20px solid transparent;
+                            border-left: 20px solid transparent;
+                            border-bottom: 20px solid transparent;
+                            border-right: 20px solid #2b2a2f;
+                            position: absolute;
+                            right: 100%;
+                            top: 1px;
+                        }
+                        a {
+                            display: block;
+                            font-size: 11px;
+                            color: white;
+                            margin-bottom: 2px;
+                            transition: $time;
+                            &:hover {
+                                color: $accent-color;
+                            }
+                        }
+                    }
+                    .phones-icon {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 0px 8px 8px 0px;
+                        background-color: grey;
+                        border-bottom: 1px solid #2b2a2f;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+                .social-links {
+                    margin-bottom: -20px;
+                    z-index: 1;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-around;
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 30px;
+                        position: relative;
+                        height: 30px;
+                        background-color: $accent-color;
+                        border-radius: 4px;
+                        z-index: 1;
+                        margin: 0 5px;
+                        transition: all 0.1s;
+                        transform-origin: bottom;
+                        &:hover {
+                            background-color: $accent-alternate;
+                            &::before,
+                            &::after {
+                                background-color: $accent-alternate;
+                            }
+                        }
+                        img {
+                            width: 50%;
+                        }
+                        &::before {
+                            content: '';
+                            width: 10px;
+                            height: 10px;
+                            left: -3px;
+                            background-color: $accent-color;
+                            top: 0;
+                            position: absolute;
+                            transition: all 0.1s;
+                        }
+                        &::after {
+                            content: '';
+                            width: 6px;
+                            height: 10px;
+                            z-index: 1;
+                            left: -6px;
+                            background-color: $accent-alternate;
+                            top: 0px;
+                            position: absolute;
+                            border-radius: 8px 8px 0px 0px;
+                            transition: all 0.1s;
+                            border-right: .2px solid $accent-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 880px) {
+    header {
+        padding: 0 6%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        .brand-logo {
+            padding: 10px;
+            img {
+                width: 120px;
+            }
+        }
+        .nav-container {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            .menu {
+                .menu-content {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    list-style: none;
+                    >li {
+                        position: relative;
+                        padding: 10px 25px;
+                        transition: $time;
+                        &:not(:last-child) {
+                            &:before {
+                                position: absolute;
+                                content: "";
+                                width: 1px;
+                                top: 30%;
+                                left: 100%;
+                                height: 40%;
+                                z-index: 1;
+                                background-color: $menu-color;
+                            }
+                        }
+                        &:hover,
+                        &.current_page_item {
+                            background-color: $accent-color;
+                            &:before {
+                                position: absolute;
+                                content: "";
+                                width: 100%;
+                                top: 100%;
+                                height: 5px;
+                                z-index: 1;
+                                left: 0;
+                                background-color: $accent-alternate;
+                            }
+                            a {
+                                color: white;
+                            }
+                        }
+                        &:hover {
+                            >.sub-menu {
+                                display: block;
+                            }
+                        }
+                        a {
+                            transition: $time;
+                            font-weight: normal;
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            color: #666;
+                        }
+                        .sub-menu {
+                            display: none;
+                            position: absolute;
+                            top: calc(100% + 10px);
+                            left: 0;
+                            z-index: 1;
+                            background-color: #2f273b;
+                            padding: 10px 15px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            &:before {
+                                position: absolute;
+                                content: '';
+                                width: 100%;
+                                height: 5px;
+                                top: -5px;
+                                left: 0;
+                            }
+                            li {
+                                border: none;
+                                list-style: none;
+                                padding: 10px 0;
+                                transition: $time;
+                                &:not(:last-child) {
+                                    border-bottom: 1px solid #6e4929;
+                                }
+                                &::before {
+                                    content: '';
+                                    width: 0;
+                                    height: 0;
+                                }
+                                &:hover {
+                                    background: none;
+                                    a {
+                                        color: $accent-alternate;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .header-social-container {
+                margin-left: 20px;
+                .phones-container {
+                    display: flex;
+                    margin-bottom: 10px;
+                    .phones-numbers {
+                        padding: 4px 7px;
+                        background-color: #373942;
+                        position: relative;
+                        border-bottom: 1px solid #2b2a2f;
+                        &::after {
+                            content: '';
+                            border-top: 20px solid transparent;
+                            border-left: 20px solid transparent;
+                            border-bottom: 20px solid transparent;
+                            border-right: 20px solid #373942;
+                            position: absolute;
+                            right: 100%;
+                            top: 0;
+                        }
+                        &::before {
+                            content: '';
+                            border-top: 20px solid transparent;
+                            border-left: 20px solid transparent;
+                            border-bottom: 20px solid transparent;
+                            border-right: 20px solid #2b2a2f;
+                            position: absolute;
+                            right: 100%;
+                            top: 1px;
+                        }
+                        a {
+                            display: block;
+                            font-size: 11px;
+                            color: white;
+                            margin-bottom: 2px;
+                            transition: $time;
+                            &:hover {
+                                color: $accent-color;
+                            }
+                        }
+                    }
+                    .phones-icon {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 0px 8px 8px 0px;
+                        background-color: grey;
+                        border-bottom: 1px solid #2b2a2f;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+                .social-links {
+                    margin-bottom: -20px;
+                    z-index: 1;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-around;
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 30px;
+                        position: relative;
+                        height: 30px;
+                        background-color: $accent-color;
+                        border-radius: 4px;
+                        z-index: 1;
+                        margin: 0 5px;
+                        transition: all 0.1s;
+                        transform-origin: bottom;
+                        &:hover {
+                            background-color: $accent-alternate;
+                            &::before,
+                            &::after {
+                                background-color: $accent-alternate;
+                            }
+                        }
+                        img {
+                            width: 50%;
+                        }
+                        &::before {
+                            content: '';
+                            width: 10px;
+                            height: 10px;
+                            left: -3px;
+                            background-color: $accent-color;
+                            top: 0;
+                            position: absolute;
+                            transition: all 0.1s;
+                        }
+                        &::after {
+                            content: '';
+                            width: 6px;
+                            height: 10px;
+                            z-index: 1;
+                            left: -6px;
+                            background-color: $accent-alternate;
+                            top: 0px;
+                            position: absolute;
+                            border-radius: 8px 8px 0px 0px;
+                            transition: all 0.1s;
+                            border-right: .2px solid $accent-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

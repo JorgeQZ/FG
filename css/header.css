@@ -1,0 +1,437 @@
+@media screen and (min-width: 320px) {
+  header {
+    background-color: #fff;
+    padding: 0 6%;
+  }
+  header .brand-logo {
+    padding: 10px;
+  }
+  header .brand-logo img {
+    width: 120px;
+  }
+  header .nav-container .menu .menu-content {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  header .nav-container .menu .menu-content li {
+    position: relative;
+    padding: 10px 20px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  header .nav-container .menu .menu-content li:hover, header .nav-container .menu .menu-content li.current_page_item {
+    background-color: #ff9900;
+  }
+  header .nav-container .menu .menu-content li:hover:before, header .nav-container .menu .menu-content li.current_page_item:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 100%;
+    height: 5px;
+    z-index: 1;
+    left: 0;
+    background-color: #ff7200;
+  }
+  header .nav-container .menu .menu-content li:hover a, header .nav-container .menu .menu-content li.current_page_item a {
+    color: white;
+  }
+  header .nav-container .menu .menu-content li a {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #666;
+  }
+  header .nav-container .header-social-container {
+    margin-left: 20px;
+  }
+  header .nav-container .header-social-container .phones-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  header .nav-container .header-social-container .phones-container .phones-numbers {
+    padding: 4px 7px;
+    background-color: #373942;
+    position: relative;
+    border-bottom: 1px solid #2b2a2f;
+  }
+  header .nav-container .header-social-container .phones-container .phones-numbers::after {
+    content: '';
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #373942;
+    position: absolute;
+    right: 100%;
+    top: 0;
+  }
+  header .nav-container .header-social-container .phones-container .phones-numbers::before {
+    content: '';
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #2b2a2f;
+    position: absolute;
+    right: 100%;
+    top: 1px;
+  }
+  header .nav-container .header-social-container .phones-container .phones-numbers a {
+    display: block;
+    font-size: 11px;
+    color: white;
+    margin-bottom: 2px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  header .nav-container .header-social-container .phones-container .phones-numbers a:hover {
+    color: #ff9900;
+  }
+  header .nav-container .header-social-container .phones-container .phones-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 0px 8px 8px 0px;
+    background-color: grey;
+    border-bottom: 1px solid #2b2a2f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .nav-container .header-social-container .phones-container .phones-icon img {
+    width: 70%;
+  }
+  header .nav-container .header-social-container .social-links {
+    margin-bottom: -20px;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .nav-container .header-social-container .social-links .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30px;
+    position: relative;
+    height: 30px;
+    background-color: #ff9900;
+    border-radius: 4px;
+    z-index: 1;
+    margin: 0 5px;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  header .nav-container .header-social-container .social-links .item:hover {
+    background-color: #ff7200;
+  }
+  header .nav-container .header-social-container .social-links .item:hover::before, header .nav-container .header-social-container .social-links .item:hover::after {
+    background-color: #ff7200;
+  }
+  header .nav-container .header-social-container .social-links .item img {
+    width: 50%;
+  }
+  header .nav-container .header-social-container .social-links .item::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: -3px;
+    background-color: #ff9900;
+    top: 0;
+    position: absolute;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+  header .nav-container .header-social-container .social-links .item::after {
+    content: '';
+    width: 6px;
+    height: 10px;
+    z-index: 1;
+    left: -6px;
+    background-color: #ff7200;
+    top: 0px;
+    position: absolute;
+    border-radius: 8px 8px 0px 0px;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    border-right: 0.2px solid #ff9900;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  header {
+    padding: 0 6%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .brand-logo {
+    padding: 10px;
+  }
+  header .brand-logo img {
+    width: 120px;
+  }
+  header .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  header .nav-container .menu .menu-content {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+  }
+  header .nav-container .menu .menu-content > li {
+    position: relative;
+    padding: 10px 25px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  header .nav-container .menu .menu-content > li:not(:last-child):before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    top: 30%;
+    left: 100%;
+    height: 40%;
+    z-index: 1;
+    background-color: #666666;
+  }
+  header .nav-container .menu .menu-content > li:hover, header .nav-container .menu .menu-content > li.current_page_item {
+    background-color: #ff9900;
+  }
+  header .nav-container .menu .menu-content > li:hover:before, header .nav-container .menu .menu-content > li.current_page_item:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 100%;
+    height: 5px;
+    z-index: 1;
+    left: 0;
+    background-color: #ff7200;
+  }
+  header .nav-container .menu .menu-content > li:hover a, header .nav-container .menu .menu-content > li.current_page_item a {
+    color: white;
+  }
+  header .nav-container .menu .menu-content > li:hover > .sub-menu {
+    display: block;
+  }
+  header .nav-container .menu .menu-content > li a {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #666;
+  }
+  header .nav-container .menu .menu-content > li .sub-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 1;
+    background-color: #2f273b;
+    padding: 10px 15px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  header .nav-container .menu .menu-content > li .sub-menu:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+  }
+  header .nav-container .menu .menu-content > li .sub-menu li {
+    border: none;
+    list-style: none;
+    padding: 10px 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  header .nav-container .menu .menu-content > li .sub-menu li:not(:last-child) {
+    border-bottom: 1px solid #6e4929;
+  }
+  header .nav-container .menu .menu-content > li .sub-menu li::before {
+    content: '';
+    width: 0;
+    height: 0;
+  }
+  header .nav-container .menu .menu-content > li .sub-menu li:hover {
+    background: none;
+  }
+  header .nav-container .menu .menu-content > li .sub-menu li:hover a {
+    color: #ff7200;
+  }
+  header .nav-container .header-social-container {
+    margin-left: 20px;
+  }
+  header .nav-container .header-social-container .phones-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  header .nav-container .header-social-container .phones-container .phones-numbers {
+    padding: 4px 7px;
+    background-color: #373942;
+    position: relative;
+    border-bottom: 1px solid #2b2a2f;
+  }
+  header .nav-container .header-social-container .phones-container .phones-numbers::after {
+    content: '';
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #373942;
+    position: absolute;
+    right: 100%;
+    top: 0;
+  }
+  header .nav-container .header-social-container .phones-container .phones-numbers::before {
+    content: '';
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #2b2a2f;
+    position: absolute;
+    right: 100%;
+    top: 1px;
+  }
+  header .nav-container .header-social-container .phones-container .phones-numbers a {
+    display: block;
+    font-size: 11px;
+    color: white;
+    margin-bottom: 2px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  header .nav-container .header-social-container .phones-container .phones-numbers a:hover {
+    color: #ff9900;
+  }
+  header .nav-container .header-social-container .phones-container .phones-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 0px 8px 8px 0px;
+    background-color: grey;
+    border-bottom: 1px solid #2b2a2f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .nav-container .header-social-container .phones-container .phones-icon img {
+    width: 70%;
+  }
+  header .nav-container .header-social-container .social-links {
+    margin-bottom: -20px;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .nav-container .header-social-container .social-links .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30px;
+    position: relative;
+    height: 30px;
+    background-color: #ff9900;
+    border-radius: 4px;
+    z-index: 1;
+    margin: 0 5px;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  header .nav-container .header-social-container .social-links .item:hover {
+    background-color: #ff7200;
+  }
+  header .nav-container .header-social-container .social-links .item:hover::before, header .nav-container .header-social-container .social-links .item:hover::after {
+    background-color: #ff7200;
+  }
+  header .nav-container .header-social-container .social-links .item img {
+    width: 50%;
+  }
+  header .nav-container .header-social-container .social-links .item::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: -3px;
+    background-color: #ff9900;
+    top: 0;
+    position: absolute;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+  header .nav-container .header-social-container .social-links .item::after {
+    content: '';
+    width: 6px;
+    height: 10px;
+    z-index: 1;
+    left: -6px;
+    background-color: #ff7200;
+    top: 0px;
+    position: absolute;
+    border-radius: 8px 8px 0px 0px;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    border-right: 0.2px solid #ff9900;
+  }
+}

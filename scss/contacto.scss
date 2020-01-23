@@ -1,0 +1,108 @@
+@import 'variables';
+.contacto-wrapper {
+    padding: 6%;
+    .contact-container {
+        display: flex;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        justify-content: center;
+        .column {
+            background-color: #fff;
+            width: 50%;
+            .form {
+                padding: 50px 60px;
+                .title {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 25px;
+                    color: #a4a4a4;
+                    margin-bottom: 20px;
+                }
+                .form-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    .form-input {
+                        width: 48%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        background-color: #f5f5f5;
+                        .icon {
+                            width: 15px;
+                            height: 15px;
+                            margin-left: 10px;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            &.person {
+                                background-image: url('../img/icon-person.png');
+                            }
+                            &.mail {
+                                background-image: url('../img/icon-mail.png');
+                            }
+                            &.phone {
+                                background-image: url('../img/icon-phone.png');
+                            }
+                        }
+                        input {
+                            padding: 5px;
+                            height: 30px;
+                            background-color: transparent;
+                            border: none;
+                            font-size: 15px;
+                            font-weight: 300;
+                            width: calc(100% - 25px);
+                        }
+                    }
+                    textarea {
+                        border: none;
+                        background-color: #f5f5f5;
+                        width: 100%;
+                        padding: 10px 15px;
+                        font-size: 15px;
+                        font-weight: 300;
+                    }
+                    .privacy {
+                        font-size: 12px;
+                        color: #979797;
+                    }
+                    input[type="submit"] {
+                        color: white;
+                        border: none;
+                        border-radius: 6px;
+                        padding: 7px 30px;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        margin: 0 auto;
+                        background-color: $accent-color;
+                        border: 1px solid $accent-color;
+                        border-bottom: 1px solid $accent-alternate;
+                        transition: $time;
+                        cursor: pointer;
+                        &:hover {
+                            color: $accent-color;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+            .sub-text {
+                padding: 10px 60px;
+                padding-bottom: 50px;
+                display: flex;
+                font-weight: 100;
+                color: $color-text;
+                .column {
+                    a {
+                        color: $color-text;
+                        transition: $time;
+                        &:hover {
+                            color: $accent-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
