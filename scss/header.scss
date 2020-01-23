@@ -1,37 +1,101 @@
 @import 'variables';
 // Header
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 880px) {
     header {
         background-color: #fff;
         padding: 0 6%;
-        // display: flex;
-        // align-items: flex-end;
-        // justify-content: space-between;
+        position: relative;
+        border-bottom: 2px solid $accent-color;
+        min-height: 78px;
         .brand-logo {
-            padding: 10px;
             img {
-                width: 120px;
+                width: 100px;
+                display: block;
+                margin: 0px auto;
+                padding: 8px 0;
+            }
+        }
+        .menu-button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #333333;
+            width: 78px;
+            height: 78px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            span {
+                background-color: $accent-color;
+                height: 6px;
+                width: 65%;
+                display: block;
+                position: relative;
+                margin: 4px auto;
+                z-index: 1;
             }
         }
         .nav-container {
-            // display: flex;
-            // align-items: flex-end;
-            // justify-content: flex-end;
+            position: absolute;
+            background-color: #fff;
+            height: 0;
+            width: 100%;
+            left: 0;
+            top: calc(100% + 2px);
+            z-index: 10;
+            overflow: hidden;
+            transition: $time;
+            &.act {
+                height: 100vh;
+                .menu {
+                    .menu-content {
+                        opacity: 1;
+                    }
+                }
+            }
             .menu {
                 .menu-content {
+                    opacity: 0;
+                    transition: $time;
+                    transition-delay: 0.3s;
                     margin: 0;
-                    padding: 0;
-                    // display: flex;
+                    padding: 15px;
                     list-style: none;
-                    li {
+                    >li {
                         position: relative;
-                        padding: 10px 20px;
+                        padding: 10px;
+                        margin: 2px 0;
+                        list-style: none;
                         transition: $time;
-                        &:not(:last-child) {}
-                        &:hover,
                         &.current_page_item {
-                            background-color: $accent-color;
+                            >a {
+                                background-color: $accent-color;
+                                color: white;
+                                &:before {
+                                    position: absolute;
+                                    content: "";
+                                    width: 100%;
+                                    top: 100%;
+                                    height: 5px;
+                                    z-index: 1;
+                                    left: 0;
+                                    background-color: $accent-alternate;
+                                }
+                            }
+                        }
+                        a {
+                            padding: 10px 20px;
+                            display: block;
+                            transition: $time;
+                            font-weight: normal;
+                            position: relative;
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            color: #666;
                             &:before {
+                                transition: $time;
                                 position: absolute;
                                 content: "";
                                 width: 100%;
@@ -39,131 +103,27 @@
                                 height: 5px;
                                 z-index: 1;
                                 left: 0;
-                                background-color: $accent-alternate;
+                                background-color: #fff;
                             }
-                            a {
+                            &:hover {
+                                background-color: $accent-color;
                                 color: white;
+                                &:before {
+                                    background-color: $accent-alternate;
+                                }
                             }
                         }
-                        a {
-                            transition: $time;
-                            font-weight: normal;
-                            text-transform: uppercase;
-                            font-size: 14px;
-                            color: #666;
+                        .sub-menu {
+                            li {
+                                list-style: none;
+                                margin: 2px 0;
+                            }
                         }
                     }
                 }
             }
             .header-social-container {
-                margin-left: 20px;
-                .phones-container {
-                    display: flex;
-                    margin-bottom: 10px;
-                    .phones-numbers {
-                        padding: 4px 7px;
-                        background-color: #373942;
-                        position: relative;
-                        border-bottom: 1px solid #2b2a2f;
-                        &::after {
-                            content: '';
-                            border-top: 20px solid transparent;
-                            border-left: 20px solid transparent;
-                            border-bottom: 20px solid transparent;
-                            border-right: 20px solid #373942;
-                            position: absolute;
-                            right: 100%;
-                            top: 0;
-                        }
-                        &::before {
-                            content: '';
-                            border-top: 20px solid transparent;
-                            border-left: 20px solid transparent;
-                            border-bottom: 20px solid transparent;
-                            border-right: 20px solid #2b2a2f;
-                            position: absolute;
-                            right: 100%;
-                            top: 1px;
-                        }
-                        a {
-                            display: block;
-                            font-size: 11px;
-                            color: white;
-                            margin-bottom: 2px;
-                            transition: $time;
-                            &:hover {
-                                color: $accent-color;
-                            }
-                        }
-                    }
-                    .phones-icon {
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 0px 8px 8px 0px;
-                        background-color: grey;
-                        border-bottom: 1px solid #2b2a2f;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        img {
-                            width: 70%;
-                        }
-                    }
-                }
-                .social-links {
-                    margin-bottom: -20px;
-                    z-index: 1;
-                    display: flex;
-                    align-items: flex-end;
-                    justify-content: space-around;
-                    .item {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 30px;
-                        position: relative;
-                        height: 30px;
-                        background-color: $accent-color;
-                        border-radius: 4px;
-                        z-index: 1;
-                        margin: 0 5px;
-                        transition: all 0.1s;
-                        transform-origin: bottom;
-                        &:hover {
-                            background-color: $accent-alternate;
-                            &::before,
-                            &::after {
-                                background-color: $accent-alternate;
-                            }
-                        }
-                        img {
-                            width: 50%;
-                        }
-                        &::before {
-                            content: '';
-                            width: 10px;
-                            height: 10px;
-                            left: -3px;
-                            background-color: $accent-color;
-                            top: 0;
-                            position: absolute;
-                            transition: all 0.1s;
-                        }
-                        &::after {
-                            content: '';
-                            width: 6px;
-                            height: 10px;
-                            z-index: 1;
-                            left: -6px;
-                            background-color: $accent-alternate;
-                            top: 0px;
-                            position: absolute;
-                            border-radius: 8px 8px 0px 0px;
-                            transition: all 0.1s;
-                            border-right: .2px solid $accent-color;
-                        }
-                    }
-                }
+                display: none;
             }
         }
     }
@@ -172,19 +132,31 @@
 @media screen and (min-width: 880px) {
     header {
         padding: 0 6%;
+        background-color: #fff;
         display: flex;
+        height: auto;
         align-items: flex-end;
         justify-content: space-between;
+        border-bottom: none;
         .brand-logo {
             padding: 10px;
             img {
                 width: 120px;
             }
         }
+        .menu-button {
+            display: none;
+        }
         .nav-container {
+            position: relative;
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
+            overflow: visible;
+            height: auto;
+            &.act {
+                height: auto;
+            }
             .menu {
                 .menu-content {
                     margin: 0;
@@ -279,7 +251,8 @@
                 }
             }
             .header-social-container {
-                margin-left: 20px;
+                display: block;
+                margin-left: 30px;
                 .phones-container {
                     display: flex;
                     margin-bottom: 10px;
@@ -335,7 +308,7 @@
                 }
                 .social-links {
                     margin-bottom: -20px;
-                    z-index: 1;
+                    z-index: 100;
                     display: flex;
                     align-items: flex-end;
                     justify-content: space-around;
@@ -348,8 +321,9 @@
                         height: 30px;
                         background-color: $accent-color;
                         border-radius: 4px;
-                        z-index: 1;
+                        z-index: 10;
                         margin: 0 5px;
+                        position: relative;
                         transition: all 0.1s;
                         transform-origin: bottom;
                         &:hover {

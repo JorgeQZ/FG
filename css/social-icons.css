@@ -39,3 +39,9 @@
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+
+@media screen and (max-width: 880px) {
+  .social-container {
+    text-align: center;
+  }
+}

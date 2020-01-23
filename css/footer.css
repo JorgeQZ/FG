@@ -18,9 +18,9 @@
     padding: 2% 6%;
   }
   footer .footer-container .widget-area {
-    max-width: 25%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    text-align: center;
   }
   footer .footer-container .widget-area .widget-title {
     color: #ff9900;
@@ -69,6 +69,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    text-align-last: left;
   }
   footer .footer-container .widget-area {
     max-width: 25%;

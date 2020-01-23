@@ -27,3 +27,9 @@ $accent-alternate: #ff7200;
         }
     }
 }
+
+@media screen and (max-width: 880px) {
+    .social-container {
+        text-align: center;
+    }
+}

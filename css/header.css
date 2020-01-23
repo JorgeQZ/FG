@@ -1,29 +1,89 @@
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 880px) {
   header {
     background-color: #fff;
     padding: 0 6%;
-  }
-  header .brand-logo {
-    padding: 10px;
+    position: relative;
+    border-bottom: 2px solid #ff9900;
+    min-height: 78px;
   }
   header .brand-logo img {
-    width: 120px;
+    width: 100px;
+    display: block;
+    margin: 0px auto;
+    padding: 8px 0;
   }
-  header .nav-container .menu .menu-content {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  header .menu-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #333333;
+    width: 78px;
+    height: 78px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer;
   }
-  header .nav-container .menu .menu-content li {
+  header .menu-button span {
+    background-color: #ff9900;
+    height: 6px;
+    width: 65%;
+    display: block;
     position: relative;
-    padding: 10px 20px;
+    margin: 4px auto;
+    z-index: 1;
+  }
+  header .nav-container {
+    position: absolute;
+    background-color: #fff;
+    height: 0;
+    width: 100%;
+    left: 0;
+    top: calc(100% + 2px);
+    z-index: 10;
+    overflow: hidden;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
-  header .nav-container .menu .menu-content li:hover, header .nav-container .menu .menu-content li.current_page_item {
-    background-color: #ff9900;
+  header .nav-container.act {
+    height: 100vh;
   }
-  header .nav-container .menu .menu-content li:hover:before, header .nav-container .menu .menu-content li.current_page_item:before {
+  header .nav-container.act .menu .menu-content {
+    opacity: 1;
+  }
+  header .nav-container .menu .menu-content {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+    margin: 0;
+    padding: 15px;
+    list-style: none;
+  }
+  header .nav-container .menu .menu-content > li {
+    position: relative;
+    padding: 10px;
+    margin: 2px 0;
+    list-style: none;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  header .nav-container .menu .menu-content > li.current_page_item > a {
+    background-color: #ff9900;
+    color: white;
+  }
+  header .nav-container .menu .menu-content > li.current_page_item > a:before {
     position: absolute;
     content: "";
     width: 100%;
@@ -33,164 +93,60 @@
     left: 0;
     background-color: #ff7200;
   }
-  header .nav-container .menu .menu-content li:hover a, header .nav-container .menu .menu-content li.current_page_item a {
-    color: white;
-  }
-  header .nav-container .menu .menu-content li a {
+  header .nav-container .menu .menu-content > li a {
+    padding: 10px 20px;
+    display: block;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     font-weight: normal;
+    position: relative;
     text-transform: uppercase;
     font-size: 14px;
     color: #666;
   }
-  header .nav-container .header-social-container {
-    margin-left: 20px;
-  }
-  header .nav-container .header-social-container .phones-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 10px;
-  }
-  header .nav-container .header-social-container .phones-container .phones-numbers {
-    padding: 4px 7px;
-    background-color: #373942;
-    position: relative;
-    border-bottom: 1px solid #2b2a2f;
-  }
-  header .nav-container .header-social-container .phones-container .phones-numbers::after {
-    content: '';
-    border-top: 20px solid transparent;
-    border-left: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid #373942;
-    position: absolute;
-    right: 100%;
-    top: 0;
-  }
-  header .nav-container .header-social-container .phones-container .phones-numbers::before {
-    content: '';
-    border-top: 20px solid transparent;
-    border-left: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid #2b2a2f;
-    position: absolute;
-    right: 100%;
-    top: 1px;
-  }
-  header .nav-container .header-social-container .phones-container .phones-numbers a {
-    display: block;
-    font-size: 11px;
-    color: white;
-    margin-bottom: 2px;
+  header .nav-container .menu .menu-content > li a:before {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-  }
-  header .nav-container .header-social-container .phones-container .phones-numbers a:hover {
-    color: #ff9900;
-  }
-  header .nav-container .header-social-container .phones-container .phones-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 0px 8px 8px 0px;
-    background-color: grey;
-    border-bottom: 1px solid #2b2a2f;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  header .nav-container .header-social-container .phones-container .phones-icon img {
-    width: 70%;
-  }
-  header .nav-container .header-social-container .social-links {
-    margin-bottom: -20px;
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  header .nav-container .header-social-container .social-links .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 30px;
-    position: relative;
-    height: 30px;
-    background-color: #ff9900;
-    border-radius: 4px;
-    z-index: 1;
-    margin: 0 5px;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
-  }
-  header .nav-container .header-social-container .social-links .item:hover {
-    background-color: #ff7200;
-  }
-  header .nav-container .header-social-container .social-links .item:hover::before, header .nav-container .header-social-container .social-links .item:hover::after {
-    background-color: #ff7200;
-  }
-  header .nav-container .header-social-container .social-links .item img {
-    width: 50%;
-  }
-  header .nav-container .header-social-container .social-links .item::before {
-    content: '';
-    width: 10px;
-    height: 10px;
-    left: -3px;
-    background-color: #ff9900;
-    top: 0;
     position: absolute;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-  }
-  header .nav-container .header-social-container .social-links .item::after {
-    content: '';
-    width: 6px;
-    height: 10px;
+    content: "";
+    width: 100%;
+    top: 100%;
+    height: 5px;
     z-index: 1;
-    left: -6px;
+    left: 0;
+    background-color: #fff;
+  }
+  header .nav-container .menu .menu-content > li a:hover {
+    background-color: #ff9900;
+    color: white;
+  }
+  header .nav-container .menu .menu-content > li a:hover:before {
     background-color: #ff7200;
-    top: 0px;
-    position: absolute;
-    border-radius: 8px 8px 0px 0px;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-    border-right: 0.2px solid #ff9900;
+  }
+  header .nav-container .menu .menu-content > li .sub-menu li {
+    list-style: none;
+    margin: 2px 0;
+  }
+  header .nav-container .header-social-container {
+    display: none;
   }
 }
 
 @media screen and (min-width: 880px) {
   header {
     padding: 0 6%;
+    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: auto;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    border-bottom: none;
   }
   header .brand-logo {
     padding: 10px;
@@ -198,7 +154,11 @@
   header .brand-logo img {
     width: 120px;
   }
+  header .menu-button {
+    display: none;
+  }
   header .nav-container {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -208,6 +168,11 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    overflow: visible;
+    height: auto;
+  }
+  header .nav-container.act {
+    height: auto;
   }
   header .nav-container .menu .menu-content {
     margin: 0;
@@ -302,7 +267,8 @@
     color: #ff7200;
   }
   header .nav-container .header-social-container {
-    margin-left: 20px;
+    display: block;
+    margin-left: 30px;
   }
   header .nav-container .header-social-container .phones-container {
     display: -webkit-box;
@@ -368,7 +334,7 @@
   }
   header .nav-container .header-social-container .social-links {
     margin-bottom: -20px;
-    z-index: 1;
+    z-index: 100;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -393,8 +359,9 @@
     height: 30px;
     background-color: #ff9900;
     border-radius: 4px;
-    z-index: 1;
+    z-index: 10;
     margin: 0 5px;
+    position: relative;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
     -webkit-transform-origin: bottom;

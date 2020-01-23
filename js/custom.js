@@ -13,4 +13,8 @@ $(document).ready(function() {
         $('.slider-tabs-content .tab').removeClass('active');
         $('.slider-tabs-content .tab').eq((i - 1)).addClass('active');
     });
+
+    $('.menu-button').click(function() {
+        $('.nav-container').toggleClass('act');
+    });
 });
