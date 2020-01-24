@@ -24,6 +24,8 @@ a {
   background-position: center;
   background-size: cover;
   position: relative;
+  -webkit-perspective: 2px;
+          perspective: 2px;
 }
 
 .banner::before {

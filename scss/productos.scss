@@ -1,54 +1,285 @@
-.contenedor-general-productos {
-    background: #edf1f4;
+@import 'variables';
+.product-container {
+    padding: 3% 6%;
     .sliders-container {
+        .slider-tabs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 73px 0;
+            border-top: 1px solid #dcdcdc;
+            position: relative;
+            border-bottom: 1px solid #dcdcdc;
+            .active-bar {
+                position: absolute;
+                left: 0;
+                bottom: -6px;
+                background-color: #ff9900;
+                height: 5px;
+                width: 20%;
+            }
+            .item {
+                flex: 0 0 20%;
+                text-align: center;
+                position: relative;
+                cursor: pointer;
+                img {
+                    // max-height: 24.8px;
+                    width: 80%;
+                }
+            }
+        }
         .slider-tabs-content {
             .tab {
-                padding-top: 20px;
-                .item {
-                    width: 22.5%;
-                    box-shadow: none;
-                    background: white;
-                    margin: 20px 0;
-                    .img-container {
-                        height: 215px;
-                        background: none;
-                        img {
-                            width: 60%;
-                        }
-                    }
-                    .text {
-                        background-color: transparent;
-                        .title {
-                            color: #0367be;
-                            font-size: 22px;
-                            font-weight: 600;
-                            margin-bottom: 5px;
-                        }
-                        .description {
-                            color: #999999;
-                            font-size: 10px;
-                            line-height: 12px;
-                            font-weight: 100;
-                        }
-                    }
+                display: none;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 80px 0;
+                padding-top: 10px;
+                position: relative;
+                &.active {
+                    display: flex;
                 }
                 .info {
                     width: 100%;
-                    p.tit {
-                        color: #0367be;
-                        font-size: 32px;
-                        font-weight: 600;
-                        text-align: center;
+                    display: block;
+                    padding: 20px 0;
+                    padding-top: 0;
+                    .tit {
+                        color: #0467be;
+                        font-weight: bold;
                         text-transform: uppercase;
-                        margin: 0;
-                        margin-bottom: 15px;
+                        font-size: 40px;
+                        text-align: center;
                     }
-                    p.desc {
-                        color: #999999;
-                        font-size: 15px;
-                        font-weight: 100;
-                        margin: 0;
-                        margin-bottom: 20px;
+                    .desc {
+                        color: #808080;
+                    }
+                }
+                .item {
+                    width: 24%;
+                    transition: $time;
+                    background-color: #fff;
+                    margin: 10px 0;
+                    cursor: pointer;
+                    &:hover {
+                        box-shadow: 3px 2px 4px 1px #acabab;
+                        .img-container {
+                            img {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                    .img-container {
+                        // background-image: url('../img/tab-bg.jpg');
+                        min-height: 200px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 20px 10px;
+                        -ms-transition: background-size 2s ease-in;
+                        -o-transition: background-size 2s ease-in;
+                        -webkit-transition: background-size 2s ease-in;
+                        -moz-transition: background-size 2s ease-in;
+                        transition: background-size 2s ease-in;
+                        img {
+                            transition: $time;
+                            width: 80%;
+                            max-width: 200px;
+                        }
+                    }
+                    .text {
+                        color: white;
+                        padding: 20px 12px 15px 12px;
+                        .title {
+                            font-weight: normal;
+                            color: #0467be;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                        }
+                        .description {
+                            font-weight: thin;
+                            font-size: 12px;
+                            text-align: left;
+                            color: #b4b4b4;
+                        }
+                    }
+                }
+                a {
+                    margin-left: auto;
+                    .ver-mas {
+                        background-color: #ff9900;
+                        color: white;
+                        text-transform: uppercase;
+                        padding: 2px 15px;
+                        padding-right: 30px;
+                        font-size: 14px;
+                        font-weight: 300;
+                        margin-top: 30px;
+                        position: relative;
+                        transition: $time;
+                        border: 1px solid $accent-color;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            background-image: url('../img/right-white.png');
+                            background-position: center left;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            right: 5px;
+                            top: 5.5px;
+                            transition: $time;
+                        }
+                        &:hover {
+                            background-color: #fff;
+                            color: $accent-color;
+                            &::before {
+                                background-image: url('../img/right-color.png');
+                            }
+                        }
+                    }
+                }
+                .pagination-container {
+                    width: 100%;
+                    height: 20px;
+                    display: block;
+                    margin: 15px 0;
+                    padding: 10px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    .button-container {
+                        a {
+                            padding: 2px 10px;
+                            color: white;
+                            font-size: 12px;
+                            background-color: $accent-color;
+                            text-transform: uppercase;
+                            position: relative;
+                            border: 1px solid $accent-color;
+                            &,
+                            &:before {
+                                transition: $time;
+                            }
+                            &:hover {
+                                box-shadow: none;
+                                background-color: #fff;
+                                color: $accent-color;
+                            }
+                            &.next {
+                                padding-right: 25px;
+                                &:hover {
+                                    &:before {
+                                        background-image: url('../img/right-color.png');
+                                    }
+                                }
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    width: 12px;
+                                    height: 12px;
+                                    background-image: url('../img/right-white.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    right: 4px;
+                                    top: 4px;
+                                }
+                            }
+                            &.prev {
+                                padding-left: 25px;
+                                &:hover {
+                                    &:before {
+                                        background-image: url('../img/left-color.png');
+                                    }
+                                }
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    width: 12px;
+                                    height: 12px;
+                                    background-image: url('../img/left-white.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    left: 4px;
+                                    top: 4px;
+                                }
+                            }
+                        }
+                    }
+                    .pagination {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 300px;
+                        height: 20px;
+                        top: 10px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        .page-button-container {
+                            display: flex;
+                            width: auto;
+                            height: 20px;
+                            justify-content: flex-end;
+                            .button {
+                                display: inline-block;
+                                position: relative;
+                                width: 12px;
+                                height: 12px;
+                                margin: 0 4px;
+                                background-color: $accent-color;
+                                background-size: 55%;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                padding: 3px;
+                                cursor: pointer;
+                                transition: $time;
+                                border: 1px solid $accent-color;
+                                &:hover {
+                                    background-color: #fff;
+                                }
+                                &.prev {
+                                    background-image: url('../img/left-white.png');
+                                    &:hover {
+                                        background-image: url('../img/left-color.png');
+                                    }
+                                }
+                                &.next {
+                                    background-image: url('../img/right-white.png');
+                                    &:hover {
+                                        background-image: url('../img/right-color.png');
+                                    }
+                                }
+                            }
+                            .numbered {
+                                width: 40px;
+                                height: 18px;
+                                border-radius: 4px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: 1px solid #999999;
+                                background-color: #fff;
+                                color: #999999;
+                            }
+                        }
+                        .total-number {
+                            color: #999999;
+                            font-size: 12px;
+                            margin: 0px 4px;
+                            span {
+                                font-size: 16px;
+                                font-weight: bold;
+                            }
+                        }
                     }
                 }
             }

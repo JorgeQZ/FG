@@ -1,8 +1,8 @@
-.contenedor-general-empresa{
-    padding: 40px 0;
-    width: 85%;
+.contenedor-general-empresa {
+    padding: 4% 6%;
     margin: 0 auto;
-    p.encabezado{
+    background-color: #fff;
+    p.encabezado {
         color: #f19107;
         font-size: 30px;
         font-weight: 600;
@@ -11,32 +11,29 @@
         margin: 0;
         margin-bottom: 40px;
     }
-
-    p.desc{
+    p.desc {
         color: #999999;
         font-size: 15px;
         margin: 0;
         font-weight: lighter;
     }
-
-
-
-    .contenedor-mision-vision{
+    .contenedor-mision-vision {
         padding: 100px 0;
         display: flex;
         align-items: center;
-        .cont-info{
+        .cont-info {
             width: 63%;
             margin-right: 35px;
-            .item{
+            .item {
                 display: flex;
                 align-items: center;
-                img{
-                    width: 130px; /*19.5*/
+                img {
+                    width: 130px;
+                    /*19.5*/
                 }
-                div{
+                div {
                     margin-left: 50px;
-                    p.tit{
+                    p.tit {
                         color: #f19107;
                         font-size: 24px;
                         font-weight: 600;
@@ -44,25 +41,24 @@
                         margin: 0;
                         margin-bottom: 5px;
                     }
-                    p.desc{
+                    p.desc {
                         color: #999999;
                         font-size: 15px;
                         margin: 0;
                         font-weight: lighter;
                     }
                 }
-                &:first-child{
+                &:first-child {
                     margin-bottom: 95px;
                 }
             }
         }
-        .cont-img{
+        .cont-img {
             width: 37%;
-            img{
+            img {
                 width: 100%;
                 max-width: 500px;
             }
         }
     }
-
 }

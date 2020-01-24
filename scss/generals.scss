@@ -24,6 +24,7 @@
         background-position: center;
         background-size: cover;
         position: relative;
+        perspective: 2px;
         &::before {
             content: "";
             position: absolute;
