@@ -19,7 +19,7 @@ function fg_styles() {
         wp_enqueue_style( 'empresa', get_template_directory_uri().'/css/empresa.css' );
     }
 
-    if(is_page_template('page-productos.php')){
+    if(is_page_template('page-productos.php') || is_page_template('page-producto.php')){
         wp_enqueue_style( 'productos', get_template_directory_uri().'/css/productos.css' );
     }
 
