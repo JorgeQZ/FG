@@ -3,16 +3,14 @@
  * Template Name: Producto
  *
  */
-
-
-
 $parent_ID = $post->post_parent;
+$page_ID = get_the_ID();
 ?>
 <?php get_header();?>
 
 <div class="banner" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
     <div class="banner-tit">
-        <?php the_title() ?>
+        Nuestros productos
     </div>
 </div>
 
@@ -29,277 +27,76 @@ $parent_ID = $post->post_parent;
                 'order'          => 'ASC',
                 'orderby'        => 'menu_order'
             );
-            
+            $pos = 0;
+            $current_pos = 0;
             $parent = new WP_Query( $args );
-
-            if ( $parent->have_posts() ) : ?>
-
-            <?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
-            <?php echo get_the_ID();?>
+            if ( $parent->have_posts() ) :
+                while ( $parent->have_posts() ) : $parent->the_post(); 
+                $current_pos++;
+                if($page_ID == get_the_ID()){$pos = $current_pos;}
+                $img_url =  get_field('producto_image', get_the_ID()); 
+            ?>
             <div class="item">
-
-                <img src="<?php echo get_template_directory_uri().'/img/procentec.png'?>" alt="">
+                <a href="<?php the_permalink();?>">
+                    <img src="<?php echo $img_url?>" alt="">
+                </a>
             </div>
-            <?php endwhile; ?>
+            <?php 
+                 endwhile;
+            endif; 
+            wp_reset_postdata(); 
+            ?>
 
-            <?php endif; wp_reset_postdata(); ?>
-            <!-- <div class="item">
-
-                <img src="<?php echo get_template_directory_uri().'/img/procentec.png'?>" alt="">
-            </div>
-            <div class="item">
-
-                <img src="<?php echo get_template_directory_uri().'/img/siemens.png'?>" alt="">
-
-            </div>
-            <div class="item">
-
-                <img src="<?php echo get_template_directory_uri().'/img/fg.png'?>" alt="">
-
-            </div>
-            <div class="item">
-
-                <img src="<?php echo get_template_directory_uri().'/img/omron.png'?>" alt="">
-            </div>
-            <div class="item">
-
-                <img src="<?php echo get_template_directory_uri().'/img/econ.png'?>" alt="">
-
-            </div> -->
         </div>
-
+        <?php echo $pos;?>
         <div class="slider-tabs-content">
             <div class="tab active">
                 <div class="info">
                     <p class="tit">
-                        procentec
+                        <?php the_title(); ?>
                     </p>
-                    <p class="desc">
-                        En F&G Global Equipment, somos distribuidores exclusivos de PROCENTEC para México.
-                        Contamos con suministro de refacciones para tus redes PROFIBUS y PROFINET.
-                    </p>
-                    <p class="desc">
-                        Ofrecemos asesoría para la selección de equipos para redes
-                        industriales en nuevos proyectos y ampliaciones.
-                    </p>
-                    <p class="desc">
-                        Brindamos cursos de capacitación técnica, cubriendo el uso del hardware y
-                        software necesario para analiar y diagnosticar tus redes industriales.
-                    </p>
-                    <p class="desc">
-                        Da clic en las imágenes para conocer los productos, o bien a mano derecha en el
-                        logo de PROCENTEC para ir directamente al sitio web.
-                    </p>
+                    <div class="desc">
+                        <?php the_content(); ?>
+                    </div>
                 </div>
+                <?php 
+                $taxonomy_ID = get_field('marca');
+                $post_args = array(
+                    'showposts' => -1,
+                    'post_type' => 'productos',
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'marcas',
+                            'field' => 'term_id',
+                            'terms' => $taxonomy_ID,
+                        )
+                    )
+                );
+                $the_query = new WP_Query($post_args);
+                if( $the_query->have_posts() ):
+                    while($the_query->have_posts()): $the_query->the_post();
+                        ?>
                 <div class="item">
-                    <a href="#">
+                    <a href="<?php the_permalink(); ?>">
                         <div class="img-container">
                             <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
                         </div>
                         <div class="text">
                             <div class="title">
-                                ComBricks
+                                <?php the_title(); ?>
                             </div>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
-                        </div>
-                        <div class="text">
-                            <div class="title">
-                                ComBricks
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-3-1.png'; ?>" alt="">
-                        </div>
-                        <div class="text">
-                            <div class="title">
-                                ComBricks
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
-                        </div>
-                        <div class="text">
-                            <div class="title">
-                                ComBricks
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
+                                <?php the_excerpt(); ?>
                             </div>
                         </div>
                     </a>
                 </div>
 
-                <div class="item">
-                    <a href="#">
-                        <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
-                        </div>
-                        <div class="text">
-                            <div class="title">
-                                ComBricks
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
-                        </div>
-                        <div class="text">
-                            <div class="title">
-                                ComBricks
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-3-1.png'; ?>" alt="">
-                        </div>
-                        <div class="text">
-                            <div class="title">
-                                ComBricks
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
-                        </div>
-                        <div class="text">
-                            <div class="title">
-                                ComBricks
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="#">
-                        <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
-                        </div>
-                        <div class="text">
-                            <div class="title">
-                                ComBricks
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-2.png'; ?>" alt="">
-                        </div>
-                        <div class="text">
-                            <div class="title">
-                                ComBricks
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-3-1.png'; ?>" alt="">
-                        </div>
-                        <div class="text">
-                            <div class="title">
-                                ComBricks
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-4.png'; ?>" alt="">
-                        </div>
-                        <div class="text">
-                            <div class="title">
-                                ComBricks
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-
+                <?php
+                    endwhile;
+                endif;
+                wp_reset_postdata();
+                ?>
                 <div class="pagination-container">
                     <div class="button-container">
                         <a href="#" class="item prev">Anterior</a>
@@ -330,6 +127,5 @@ $parent_ID = $post->post_parent;
         </div>
     </div>
 </div>
-
 
 <?php get_footer();?>

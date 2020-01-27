@@ -27,6 +27,7 @@
   background-color: #ff9900;
   height: 5px;
   width: 20%;
+  display: none;
 }
 
 .product-container .sliders-container .slider-tabs .item {
@@ -134,17 +135,18 @@
 }
 
 .product-container .sliders-container .slider-tabs-content .tab .item .text .title {
-  font-weight: normal;
+  font-weight: bold;
   color: #0467be;
   font-size: 20px;
   text-transform: uppercase;
 }
 
 .product-container .sliders-container .slider-tabs-content .tab .item .text .description {
-  font-weight: thin;
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 14px;
   text-align: left;
   color: #b4b4b4;
+  min-height: 110px;
 }
 
 .product-container .sliders-container .slider-tabs-content .tab a {

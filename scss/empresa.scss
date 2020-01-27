@@ -15,7 +15,7 @@
         color: #999999;
         font-size: 15px;
         margin: 0;
-        font-weight: lighter;
+        font-weight: 300;
     }
     .contenedor-mision-vision {
         padding: 100px 0;
@@ -29,7 +29,6 @@
                 align-items: center;
                 img {
                     width: 130px;
-                    /*19.5*/
                 }
                 div {
                     margin-left: 50px;
@@ -45,7 +44,7 @@
                         color: #999999;
                         font-size: 15px;
                         margin: 0;
-                        font-weight: lighter;
+                        font-weight: 300;
                     }
                 }
                 &:first-child {

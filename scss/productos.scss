@@ -19,6 +19,7 @@
                 background-color: #ff9900;
                 height: 5px;
                 width: 20%;
+                display: none;
             }
             .item {
                 flex: 0 0 20%;
@@ -26,7 +27,6 @@
                 position: relative;
                 cursor: pointer;
                 img {
-                    // max-height: 24.8px;
                     width: 80%;
                 }
             }
@@ -96,16 +96,17 @@
                         color: white;
                         padding: 20px 12px 15px 12px;
                         .title {
-                            font-weight: normal;
+                            font-weight: bold;
                             color: #0467be;
                             font-size: 20px;
                             text-transform: uppercase;
                         }
                         .description {
-                            font-weight: thin;
-                            font-size: 12px;
+                            font-weight: 400;
+                            font-size: 14px;
                             text-align: left;
                             color: #b4b4b4;
+                            min-height: 110px;
                         }
                     }
                 }

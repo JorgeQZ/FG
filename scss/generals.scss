@@ -7,7 +7,7 @@
     body {
         margin: 0;
         padding: 0;
-        scroll-behavior: smooth;
+        // scroll-behavior: smooth;
         font-family: 'Montserrat';
     }
     
@@ -17,6 +17,10 @@
     
     a {
         text-decoration: none;
+    }
+    
+    .wrapper-content {
+        padding: 2% 6%;
     }
     
     .banner {

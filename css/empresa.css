@@ -18,7 +18,7 @@
   color: #999999;
   font-size: 15px;
   margin: 0;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .contenedor-general-empresa .contenedor-mision-vision {
@@ -47,7 +47,6 @@
 
 .contenedor-general-empresa .contenedor-mision-vision .cont-info .item img {
   width: 130px;
-  /*19.5*/
 }
 
 .contenedor-general-empresa .contenedor-mision-vision .cont-info .item div {
@@ -67,7 +66,7 @@
   color: #999999;
   font-size: 15px;
   margin: 0;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .contenedor-general-empresa .contenedor-mision-vision .cont-info .item:first-child {
