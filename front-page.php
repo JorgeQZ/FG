@@ -17,10 +17,7 @@
 
 <div class="home-wrapper">
     <div class="title-section">Nuestros Productos</div>
-
-
     <div class="sliders-container">
-
         <div class="slider-tabs">
             <div class="active-bar"></div>
             <div class="item">
@@ -39,10 +36,8 @@
             </div>
             <div class="item">
                 <img src="<?php echo get_template_directory_uri().'/img/econ.png'?>" alt="">
-
             </div>
         </div>
-
         <div class="slider-tabs-content">
             <div class="tab active">
                 <div class="item">
@@ -122,7 +117,6 @@
                     </div>
                 </a>
             </div>
-
             <div class="tab">
                 <div class="item">
                     <a href="#" target="_blank">
@@ -600,4 +594,7 @@
         </div>
     </div>
 </div>
+
+<script>
+</script>
 <?php get_footer(); ?>

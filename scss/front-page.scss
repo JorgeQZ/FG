@@ -2,7 +2,7 @@
 // home
 @media screen and (min-width: 320px) {
     .home-wrapper {
-        padding: 0 6%;
+        padding: 0;
         background-color: #fff;
         position: relative;
         &:before {
@@ -35,6 +35,7 @@
             padding-top: 95px;
         }
         .sliders-container {
+            padding: 0 6%;
             .slider-tabs {
                 display: flex;
                 justify-content: center;
@@ -54,13 +55,14 @@
                     width: 20%;
                 }
                 .item {
-                    flex: 0 0 20%;
+                    // flex: 0 0 20%;
                     text-align: center;
                     position: relative;
                     cursor: pointer;
                     img {
                         // max-height: 24.8px;
                         width: 80%;
+                        margin: 0 auto;
                     }
                 }
             }
@@ -164,226 +166,37 @@
                 }
             }
         }
-        .grid-container {
-            padding: 0px 5%;
-            .row {
-                display: flex;
-                .column {
-                    overflow: hidden;
-                    min-height: 350px;
-                    background-size: cover;
-                    background-position: right;
-                    background-repeat: no-repeat;
-                    perspective: 200px;
-                    padding: 40px 30px;
-                    box-sizing: border-box;
-                    &:first-child {
-                        width: 60%;
-                    }
-                    &:last-child {
-                        width: 40%;
-                    }
-                    .title {
-                        color: white;
-                        font-weight: bold;
-                        font-size: 30px;
-                        text-transform: uppercase;
-                    }
-                    .description {
-                        max-width: 380px;
-                        font-size: 16px;
-                        color: white;
-                    }
-                    .vermas {
-                        background-color: #fff;
-                        padding: 10px 15px;
-                        color: #ff9900;
-                        text-transform: uppercase;
-                        font-size: 10px;
-                        font-weight: 300;
-                        width: 70px;
-                        margin-top: 50px;
-                        position: relative;
-                        border: 1px solid white;
-                        transition: $time;
-                        &::before {
-                            content: '';
-                            background-image: url('../img/right-white_2.png');
-                            background-position: center;
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                            width: 10px;
-                            height: 13px;
-                            position: absolute;
-                            top: 10px;
-                            font-size: 20px;
-                            font-weight: 300;
-                            right: 9px;
-                        }
-                    }
-                    .cover {
-                        -webkit-transition: background-size 3000ms linear;
-                        -moz-transition: background-size 3000ms linear;
-                        -o-transition: background-size 3000ms linear;
-                        -ms-transition: background-size 3000ms linear;
-                        transition: background-size 3000ms linear;
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        opacity: 1;
-                        z-index: -1;
-                        background: rgb(255, 255, 255);
-                        background: linear-gradient(297deg, rgba(255, 255, 255, 0) 16%, rgba(255, 255, 255, 1) 66%);
-                        &.alternate {
-                            opacity: 0;
-                            background: rgba(#ff9900, 1);
-                            background: linear-gradient(244deg, rgba(#ff9900, 0) 16%, rgba(#ff9900, 1) 66%);
-                        }
-                    }
-                    &.subcolumn-container {
-                        padding: 0;
-                        width: 60%;
-                        box-sizing: border-box;
-                        display: flex;
-                        .subcolumn {
-                            width: 50%;
-                            padding: 40px 30px;
-                            min-height: 350px;
-                            position: relative;
-                            background-size: cover;
-                            .cover {
-                                transition: $time;
-                                position: absolute;
-                                width: 100%;
-                                height: 100%;
-                                top: 0;
-                                left: 0;
-                                z-index: 1;
-                                opacity: 1;
-                                background: rgb(255, 255, 255);
-                                background: linear-gradient(297deg, rgba(255, 255, 255, 0) 16%, rgba(255, 255, 255, 1) 66%);
-                                &.alternate {
-                                    opacity: 0;
-                                    background: rgba(#ff9900, 1);
-                                    background: linear-gradient(244deg, rgba(#ff9900, 0) 16%, rgba(#ff9900, 1) 66%);
-                                }
-                            }
-                            &.alternate {
-                                .title {
-                                    position: relative;
-                                    color: #ff9900;
-                                }
-                                .description {
-                                    position: relative;
-                                    color: #333333;
-                                }
-                                .vermas {
-                                    position: relative;
-                                    color: white;
-                                    background-color: #ff9900;
-                                    &:hover {
-                                        color: #ff9900;
-                                        background-color: #fff;
-                                        &::before {
-                                            background-image: url('../img/right-color_2.png');
-                                        }
-                                    }
-                                }
-                                .title,
-                                .description,
-                                .vermas {
-                                    z-index: 10;
-                                    position: relative;
-                                    transition: all 0.3s;
-                                }
-                                .cover {
-                                    transition: all 0.3s;
-                                }
-                                &:hover {
-                                    .title,
-                                    .description {
-                                        color: white;
-                                    }
-                                    .cover {
-                                        opacity: 0;
-                                        &.alternate {
-                                            opacity: 1;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    &.alternate {
-                        .title {
-                            color: #ff9900;
-                        }
-                        .description {
-                            color: #333333;
-                        }
-                        .vermas {
-                            color: white;
-                            background-color: #ff9900;
-                            &:hover {
-                                color: #ff9900;
-                                background-color: #fff;
-                                &::before {
-                                    background-image: url('../img/right-color_2.png');
-                                }
-                            }
-                        }
-                        .title,
-                        .description,
-                        .vermas,
-                        .cover {
-                            transition: all 0.3s;
-                        }
-                        &:hover {
-                            .title,
-                            .description {
-                                color: white;
-                            }
-                            .cover {
-                                opacity: 0;
-                                &.alternate {
-                                    opacity: 1;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+        .grid-container-desktop {
+            display: none;
         }
         .contact-container {
-            display: flex;
             padding-top: 80px;
             padding-bottom: 80px;
-            justify-content: center;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column-reverse;
             .column {
+                flex: 1 0 100%;
                 min-height: 400px;
                 background-color: #fff;
-                width: 50%;
                 .form {
                     padding: 50px 30px;
                     .title {
                         text-transform: uppercase;
                         font-weight: bold;
                         font-size: 25px;
-                        color: $color-text;
+                        color: $accent-color;
                         margin-bottom: 20px;
+                        text-align: center;
                     }
                     .form-row {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        margin-bottom: 20px;
+                        margin-bottom: 10px;
                         .form-input {
-                            width: 48%;
+                            width: 100%;
                             display: flex;
                             justify-content: flex-start;
                             align-items: center;
+                            margin-bottom: 10px;
                             background-color: #f5f5f5;
                             .icon {
                                 width: 15px;
@@ -408,13 +221,13 @@
                                 border: none;
                                 font-size: 15px;
                                 font-weight: 300;
-                                width: calc(100% - 25px);
+                                width: 100%;
                             }
                         }
                         textarea {
                             border: none;
                             background-color: #f5f5f5;
-                            width: 100%;
+                            width: 90%;
                             padding: 10px 15px;
                             font-size: 15px;
                             font-weight: 300;
@@ -435,6 +248,8 @@
                             border: 1px solid $accent-color;
                             border-bottom: 1px solid $accent-alternate;
                             transition: $time;
+                            width: 100%;
+                            box-sizing: border-box;
                             cursor: pointer;
                             &:hover {
                                 color: $accent-color;
@@ -442,6 +257,9 @@
                             }
                         }
                     }
+                }
+                iframe {
+                    height: 60vh;
                 }
             }
         }
@@ -809,7 +627,10 @@
             padding-top: 80px;
             padding-bottom: 80px;
             justify-content: center;
+            flex-direction: row;
+            background-color: transparent;
             .column {
+                flex: 1 0 50%;
                 min-height: 400px;
                 background-color: #fff;
                 width: 50%;
@@ -890,6 +711,9 @@
                             }
                         }
                     }
+                }
+                iframe {
+                    height: 100%;
                 }
             }
         }

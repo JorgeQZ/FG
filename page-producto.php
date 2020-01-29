@@ -3,8 +3,17 @@
  * Template Name: Producto
  *
  */
+global $wp_query;
+
+$paged = (get_query_var('paged')) ? absint( get_query_var('paged')) : 1;
+
 $parent_ID = $post->post_parent;
 $page_ID = get_the_ID();
+
+
+
+
+
 ?>
 <?php get_header();?>
 
@@ -62,8 +71,10 @@ $page_ID = get_the_ID();
                 <?php 
                 $taxonomy_ID = get_field('marca');
                 $post_args = array(
-                    'showposts' => -1,
+                    'paged' => $paged, 
                     'post_type' => 'productos',
+                    'showposts' => 4,
+                    'post_status' => 'publish',
                     'tax_query' => array(
                         array(
                             'taxonomy' => 'marcas',
@@ -94,14 +105,22 @@ $page_ID = get_the_ID();
 
                 <?php
                     endwhile;
-                endif;
-                wp_reset_postdata();
-                ?>
+                    $GLOBALS['wp_query']->max_num_pages = $the_query->max_num_pages;
+                    the_posts_pagination(array(
+                        'mid_size' => 1,
+                        'prev_text' => __('Anterior', 'patelextensions'),
+                        'next_text' => __('Siguiente', 'patelextensions'),
+                        'before_page_number' => __('Page', 'patelextensions') ,
+                    ));
+                   
+                    ?>
+
                 <div class="pagination-container">
                     <div class="button-container">
                         <a href="#" class="item prev">Anterior</a>
                         <a href="#" class="item next">Siguiente</a>
                     </div>
+
 
                     <div class="pagination">
                         <div class="page-button-container">
@@ -110,7 +129,7 @@ $page_ID = get_the_ID();
                                 </a>
                             </div>
                             <div class="numbered">
-                                1
+                                <?php echo $paged ?>
                             </div>
                             <div class="button next">
                                 <a href="#" class="">
@@ -119,10 +138,15 @@ $page_ID = get_the_ID();
                         </div>
 
                         <div class="total-number"> de
-                            <span>4</span>
+                            <span> <?php  echo $the_query->max_num_pages; ?></span>
                         </div>
                     </div>
                 </div>
+                <?php
+                endif;
+                wp_reset_postdata();
+                ?>
+
             </div>
         </div>
     </div>

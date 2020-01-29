@@ -8,9 +8,12 @@ function fg_styles() {
     
     wp_enqueue_style( 'generals', get_template_directory_uri().'/css/generals.css' );
     wp_enqueue_style( 'social-icons', get_template_directory_uri().'/css/social-icons.css' );
+    
     wp_enqueue_script('jquery');
     wp_enqueue_script( 'custom',  get_template_directory_uri().'/js/custom.js', false );
-
+    wp_enqueue_script( 'owl.carousel.min',  get_template_directory_uri().'/js/owl.carousel.min.js', false );
+    wp_enqueue_style( 'owl.carousel.css', get_template_directory_uri().'/js/assets/owl.carousel.min.css' );
+    
     if(is_page_template('front-page.php')){
         wp_enqueue_style( 'front-page', get_template_directory_uri().'/css/front-page.css' );
     }

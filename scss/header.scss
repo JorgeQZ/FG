@@ -17,23 +17,25 @@
         }
         .menu-button {
             position: absolute;
-            right: 0;
-            top: 0;
-            background-color: #333333;
-            width: 78px;
-            height: 78px;
+            right: 10px;
+            top: calc(50% - 20px);
+            // background-color: #333333;
+            width: 40px;
+            height: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             cursor: pointer;
+            border: 1px solid $accent-color;
+            border-radius: 4px;
             span {
                 background-color: $accent-color;
-                height: 6px;
+                height: 2px;
                 width: 65%;
                 display: block;
                 position: relative;
-                margin: 4px auto;
+                margin: 3px auto;
                 z-index: 1;
             }
         }

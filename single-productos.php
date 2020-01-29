@@ -9,6 +9,7 @@
         endwhile; 
     endif;
     ?>
+    <?php echo get_field('imagen')?>
 
 
 </div>

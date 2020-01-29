@@ -5,6 +5,7 @@ $accent-alternate: #ff7200;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    min-height: 140px;
     a {
         .item {
             &:hover {
@@ -18,7 +19,7 @@ $accent-alternate: #ff7200;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            text-align: left;
             transition: $time;
             img {
                 width: 50%;
@@ -31,5 +32,11 @@ $accent-alternate: #ff7200;
 @media screen and (max-width: 880px) {
     .social-container {
         text-align: center;
+        justify-content: center;
+        a {
+            .item {
+                margin: 15px;
+            }
+        }
     }
 }

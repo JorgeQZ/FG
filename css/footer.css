@@ -6,7 +6,6 @@
     cursor: pointer;
     color: white;
     text-decoration: none;
-    font-weight: 100;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
@@ -21,6 +20,9 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: center;
+  }
+  footer .footer-container .widget-area:first-child {
+    display: none;
   }
   footer .footer-container .widget-area .widget-title {
     color: #ff9900;
@@ -50,7 +52,7 @@
     cursor: pointer;
     color: white;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: normal;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
@@ -69,10 +71,13 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    text-align-last: left;
   }
   footer .footer-container .widget-area {
     max-width: 25%;
+    text-align: left;
+  }
+  footer .footer-container .widget-area:first-child {
+    display: block;
   }
   footer .footer-container .widget-area .widget-title {
     color: #ff9900;
@@ -88,7 +93,6 @@
   footer .footer-bottom {
     background-color: #252726;
     padding: 5px 6%;
-    text-align: center;
     color: #636464;
     font-size: 12px;
   }
