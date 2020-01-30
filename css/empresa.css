@@ -22,36 +22,28 @@
   .contenedor-general-empresa .contenedor-mision-vision {
     padding: 100px 0;
   }
-  .contenedor-general-empresa .contenedor-mision-vision .cont-info {
-    margin-right: 35px;
-  }
   .contenedor-general-empresa .contenedor-mision-vision .cont-info .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: center;
   }
   .contenedor-general-empresa .contenedor-mision-vision .cont-info .item img {
     width: 130px;
     margin: 0 auto;
   }
-  .contenedor-general-empresa .contenedor-mision-vision .cont-info .item div {
-    margin-left: 50px;
-  }
   .contenedor-general-empresa .contenedor-mision-vision .cont-info .item div p.tit {
+    text-align: center;
     color: #f19107;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 5px;
+    margin-top: 10px;
   }
   .contenedor-general-empresa .contenedor-mision-vision .cont-info .item div p.desc {
     color: #999999;
     font-size: 15px;
     margin: 0;
+    text-align: left;
     font-weight: 300;
   }
   .contenedor-general-empresa .contenedor-mision-vision .cont-info .item:first-child {

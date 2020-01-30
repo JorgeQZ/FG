@@ -4,16 +4,9 @@
  *
  */
 global $wp_query;
-
 $paged = (get_query_var('paged')) ? absint( get_query_var('paged')) : 1;
-
 $parent_ID = $post->post_parent;
 $page_ID = get_the_ID();
-
-
-
-
-
 ?>
 <?php get_header();?>
 
@@ -57,7 +50,6 @@ $page_ID = get_the_ID();
             ?>
 
         </div>
-        <?php echo $pos;?>
         <div class="slider-tabs-content">
             <div class="tab active">
                 <div class="info">

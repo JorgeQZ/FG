@@ -1,10 +1,10 @@
 @import 'variables';
 @media screen and (min-width: 320px) {
     .contacto-wrapper {
-        padding: 6%;
+        padding: 0%;
         .contact-container {
-            padding-top: 80px;
-            padding-bottom: 80px;
+            background-color: #fff;
+            margin-bottom: -4px;
             >.column {
                 background-color: #fff;
                 min-height: 50vh;
@@ -13,8 +13,9 @@
                     .title {
                         text-transform: uppercase;
                         font-weight: bold;
+                        text-align: center;
                         font-size: 25px;
-                        color: #a4a4a4;
+                        color: $accent-color;
                         margin-bottom: 20px;
                     }
                     .form-row {
@@ -87,18 +88,22 @@
                 .sub-text {
                     padding: 10px 20px;
                     padding-bottom: 50px;
-                    font-weight: 100;
                     color: $color-text;
                     .column {
                         margin: 10px 0;
                         a {
                             color: $color-text;
                             transition: $time;
+                            padding: 5px 0;
                             &:hover {
                                 color: $accent-color;
                             }
                         }
                     }
+                }
+                iframe {
+                    position: relative;
+                    min-height: 70vh;
                 }
             }
         }

@@ -21,28 +21,29 @@
         .contenedor-mision-vision {
             padding: 100px 0;
             .cont-info {
-                margin-right: 35px;
                 .item {
-                    display: flex;
-                    align-items: center;
+                    text-align: center;
                     img {
                         width: 130px;
                         margin: 0 auto;
                     }
                     div {
-                        margin-left: 50px;
+                        // margin-left: 50px;
                         p.tit {
+                            text-align: center;
                             color: #f19107;
                             font-size: 24px;
                             font-weight: 600;
                             text-transform: uppercase;
                             margin: 0;
                             margin-bottom: 5px;
+                            margin-top: 10px;
                         }
                         p.desc {
                             color: #999999;
                             font-size: 15px;
                             margin: 0;
+                            text-align: left;
                             font-weight: 300;
                         }
                     }

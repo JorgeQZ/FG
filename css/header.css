@@ -1,4 +1,4 @@
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 989px) {
   header {
     background-color: #fff;
     padding: 0 6%;
@@ -133,7 +133,7 @@
   }
 }
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 990px) {
   header {
     padding: 0 6%;
     background-color: #fff;
