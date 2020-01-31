@@ -1,9 +1,15 @@
 .wrapper-content {
-  background-color: #fff;
   padding: 2% 6%;
 }
 
 @media screen and (min-width: 320px) {
+  .grid .column h1,
+  .grid .column h2,
+  .grid .column h3,
+  .grid .column h4,
+  .grid .column h5 {
+    color: #ff9900;
+  }
   .grid .column:first-child {
     text-align: center;
   }

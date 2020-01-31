@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&amp;display=swap" rel="stylesheet">
-    <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+    <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
 </head>
 

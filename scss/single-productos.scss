@@ -1,11 +1,18 @@
+@import 'variables';
 .wrapper-content {
-    background-color: #fff;
     padding: 2% 6%;
 }
 
 @media screen and (min-width: 320px) {
     .grid {
         .column {
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                color: $accent-color;
+            }
             &:first-child {
                 text-align: center;
                 img {

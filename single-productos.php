@@ -21,8 +21,14 @@ $terms = get_the_terms( get_the_ID(), 'marcas' );
     </div>
 
     <div class="contenido">
-        <?php echo get_field('contenido')?>
-
+        <?php 
+    if ( have_posts() ) : 
+        while ( have_posts() ) : 
+            the_post();       
+            the_content(); 
+        endwhile; 
+    endif;
+    ?>
     </div>
 </div>
 
