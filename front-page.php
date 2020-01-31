@@ -712,7 +712,8 @@ $('.home-carousel-tabs').owlCarousel({
         },
         990: {
             dots: false,
-            items: 5
+            items: 5,
+            margin: 0
         }
     }
 })

@@ -1,5 +1,15 @@
 @import 'variables';
 // home
+@keyframes active {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        display: flex;
+        opacity: 1 !important;
+    }
+}
+
 @media screen and (min-width: 320px) {
     .home-wrapper {
         padding: 0;
@@ -501,7 +511,7 @@
                 position: relative;
                 border-bottom: 1px solid #dcdcdc;
                 .active-bar {
-                    display: none;
+                    display: block;
                     position: absolute;
                     left: 0;
                     bottom: -6px;
@@ -530,7 +540,10 @@
                     padding: 80px 0;
                     position: relative;
                     &.active {
-                        display: flex;
+                        animation-name: active;
+                        animation-duration: .8s;
+                        animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+                        animation-iteration-count: 1;
                     }
                     .item {
                         width: 24%;

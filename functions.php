@@ -28,8 +28,15 @@ function fg_styles() {
         wp_enqueue_style( 'productos', get_template_directory_uri().'/css/productos.css' );
     }
 
+    
+
     if(is_page_template('page-contacto.php')){
         wp_enqueue_style( 'contacto', get_template_directory_uri().'/css/contacto.css' );
+    }
+
+
+    if(is_singular( 'productos' )){
+        wp_enqueue_style( 'single-productos', get_template_directory_uri().'/css/single-productos.css' );
     }
 
 }
@@ -83,6 +90,17 @@ function wpb_custom_new_menu() {
 }
 add_action( 'init', 'wpb_custom_new_menu' );
 
+function remove_page_from_query_string($query_string)
+{ 
+    if ($query_string['name'] == 'page' && isset($query_string['page'])) {
+        unset($query_string['name']);
+        // 'page' in the query_string looks like '/2', so split it out
+        list($delim, $page_index) = split('/', $query_string['page']);
+        $query_string['paged'] = $page_index;
+    }      
+    return $query_string;
+}
 
+add_filter('request', 'remove_page_from_query_string');
 
 include_once ('widgets/icons-social-media.php');
