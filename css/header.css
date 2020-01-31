@@ -131,6 +131,15 @@
   header .nav-container .header-social-container {
     display: none;
   }
+  .mobile-phones {
+    background-color: #9e9e9e;
+    text-align: center;
+    padding: 5px;
+  }
+  .mobile-phones a {
+    color: white;
+    margin: 0 4px;
+  }
 }
 
 @media screen and (min-width: 990px) {
@@ -401,5 +410,8 @@
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
     border-right: 0.2px solid #ff9900;
+  }
+  .mobile-phones {
+    display: none;
   }
 }

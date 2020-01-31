@@ -86,3 +86,7 @@
             </div>
         </div>
     </header>
+    <div class="mobile-phones">
+        <a href="tel:+52 (81) 1933 7754">+52 (81) 1933 7754</a>
+        <a href="tel:+52 (81) 2086 2929">+52 (81) 2086 2929</a>
+    </div>

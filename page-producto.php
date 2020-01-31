@@ -5,7 +5,7 @@
  */
 global $wp_query;
 $paged = (get_query_var('paged')) ? absint( get_query_var('paged')) : 1;
-$showitems = 3;
+$showitems = 2;
 $parent_ID = $post->post_parent;
 $page_ID = get_the_ID();
 
@@ -73,7 +73,7 @@ if(!$featured_img){
                 $post_args = array(
                     'paged' => $paged, 
                     'post_type' => 'productos',
-                    'showposts' => 4,
+                    'showposts' => 8,
                     'post_status' => 'publish',
                     'tax_query' => array(
                         array(
@@ -90,7 +90,8 @@ if(!$featured_img){
                 <div class="item">
                     <a href="<?php the_permalink(); ?>">
                         <div class="img-container">
-                            <img src="<?php echo get_template_directory_uri().'/img/p-1.png'; ?>" alt="">
+                            <img src=" <?php echo get_field('imagen')?>" alt="">
+
                         </div>
                         <div class="text">
                             <div class="title">
@@ -138,19 +139,19 @@ if(!$featured_img){
                     ?>
                     <div class="pagination">
                         <div class="page-button-container">
-
+                            <!-- 
                             <?php if( $paged > 1 && 1 < $pages ): ?>
                             <a href="<?php echo get_pagenum_link($paged - 1)?>" class="button prev"></a>
-                            <?php endif; ?>
+                            <?php endif; ?> -->
 
 
                             <div class="numbered">
                                 <?php echo $paged ?>
                             </div>
 
-                            <?php if( $paged < $pages && 1 < $pages):?>
+                            <!-- <?php if( $paged < $pages && 1 < $pages):?>
                             <a href="<?php echo get_pagenum_link($paged + 1)?>" class="button next"></a>
-                            <?php endif;?>
+                            <?php endif;?> -->
 
                         </div>
 
@@ -181,7 +182,7 @@ $('.productos-carousel-tabs').owlCarousel({
             dots: true,
             items: 1
         },
-        990: {
+        880: {
             dots: false,
             items: 5,
             margin: 0

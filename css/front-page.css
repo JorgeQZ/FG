@@ -304,15 +304,17 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(189deg, rgba(2, 0, 36, 0) 0%, white 80%);
   }
   .home-wrapper .grid-container-mobile .item-cell:nth-child(1) .cover, .home-wrapper .grid-container-mobile .item-cell:nth-child(4) .cover, .home-wrapper .grid-container-mobile .item-cell:nth-child(5) .cover {
-    background-color: rgba(255, 153, 0, 0.95);
+    background-color: rgba(255, 153, 0, 0.8);
+    background: linear-gradient(189deg, rgba(255, 153, 0, 0) 0%, #ff9900 80%);
   }
   .home-wrapper .grid-container-mobile .item-cell:nth-child(1) .content .title, .home-wrapper .grid-container-mobile .item-cell:nth-child(4) .content .title, .home-wrapper .grid-container-mobile .item-cell:nth-child(5) .content .title {
     margin: 20px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 18px;
     color: #fff;
     position: relative;
   }
@@ -408,7 +410,7 @@
   .home-wrapper .grid-container-mobile .item-cell .content .title {
     margin: 20px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 18px;
     color: #ff9900;
     position: relative;
   }

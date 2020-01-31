@@ -129,6 +129,15 @@
             }
         }
     }
+    .mobile-phones {
+        background-color: #9e9e9e;
+        text-align: center;
+        padding: 5px;
+        a {
+            color: white;
+            margin: 0 4px;
+        }
+    }
 }
 
 @media screen and (min-width: 990px) {
@@ -365,5 +374,8 @@
                 }
             }
         }
+    }
+    .mobile-phones {
+        display: none;
     }
 }

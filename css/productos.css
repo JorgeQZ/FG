@@ -139,11 +139,7 @@
     padding-top: 0;
   }
   .product-container .sliders-container .slider-tabs-content .tab .info .tit {
-    color: #0467be;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 40px;
-    text-align: center;
+    display: none;
   }
   .product-container .sliders-container .slider-tabs-content .tab .info .desc {
     color: #808080;
@@ -196,10 +192,7 @@
     text-transform: uppercase;
   }
   .product-container .sliders-container .slider-tabs-content .tab .item .text .description {
-    font-weight: 400;
-    font-size: 14px;
-    text-align: left;
-    color: #b4b4b4;
+    display: none;
   }
   .product-container .sliders-container .slider-tabs-content .tab a {
     margin-left: auto;
@@ -462,6 +455,7 @@
     text-transform: uppercase;
     font-size: 40px;
     text-align: center;
+    display: block;
   }
   .product-container .sliders-container .slider-tabs-content .tab .info .desc {
     color: #808080;
@@ -518,6 +512,7 @@
     font-size: 14px;
     text-align: left;
     color: #b4b4b4;
+    display: block;
   }
   .product-container .sliders-container .slider-tabs-content .tab a {
     margin-left: auto;
@@ -575,7 +570,7 @@
             justify-content: center;
     position: relative;
   }
-  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container a {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item {
     padding: 2px 10px;
     color: white;
     font-size: 12px;
@@ -584,23 +579,23 @@
     position: relative;
     border: 1px solid #ff9900;
   }
-  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container a, .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container a:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item, .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item:before {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
-  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container a:hover {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
     background-color: #fff;
     color: #ff9900;
   }
-  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container a.next {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.next {
     padding-right: 25px;
   }
-  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container a.next:hover:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.next:hover:before {
     background-image: url("../img/right-color.png");
   }
-  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container a.next:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.next:before {
     content: '';
     position: absolute;
     width: 12px;
@@ -611,13 +606,13 @@
     right: 4px;
     top: 4px;
   }
-  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container a.prev {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.prev {
     padding-left: 25px;
   }
-  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container a.prev:hover:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.prev:hover:before {
     background-image: url("../img/left-color.png");
   }
-  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container a.prev:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.prev:before {
     content: '';
     position: absolute;
     width: 12px;
