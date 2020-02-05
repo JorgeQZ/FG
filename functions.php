@@ -1,5 +1,5 @@
 <?php 
-
+add_image_size( 'blog-post', 733, 483, true );
 function fg_styles() {
     wp_enqueue_style( 'header', get_template_directory_uri().'/css/header.css' );
     wp_enqueue_style( 'footer', get_template_directory_uri().'/css/footer.css' );
@@ -79,6 +79,17 @@ function wpb_widgets_init() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ) );
+
+
+
+    register_sidebar( array(
+        'name' =>__( 'Post Sidebar', 'wpb'),
+        'id' => 'post-sidebar',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
 }
 add_action( 'widgets_init', 'wpb_widgets_init' );
 
@@ -92,15 +103,28 @@ add_action( 'init', 'wpb_custom_new_menu' );
 
 function remove_page_from_query_string($query_string)
 { 
-    if ($query_string['name'] == 'page' && isset($query_string['page'])) {
-        unset($query_string['name']);
-        // 'page' in the query_string looks like '/2', so split it out
-        list($delim, $page_index) = split('/', $query_string['page']);
-        $query_string['paged'] = $page_index;
-    }      
+    if($query_string['name']){
+        if ($query_string['name'] == 'page' && isset($query_string['page'])) {
+            unset($query_string['name']);
+            // 'page' in the query_string looks like '/2', so split it out
+            list($delim, $page_index) = split('/', $query_string['page']);
+            $query_string['paged'] = $page_index;
+        }
+    }
     return $query_string;
 }
 
 add_filter('request', 'remove_page_from_query_string');
+function curPageURL() {
+	$pageURL = 'http';
+	if ($_SERVER["HTTPS"] == "on") { $pageURL .= "s"; }
+	$pageURL .= "://";
+	if ($_SERVER["SERVER_PORT"] != "80") {
+		$pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+	} else {
+		$pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+	}
+	return $pageURL;
+}
 
 include_once ('widgets/icons-social-media.php');

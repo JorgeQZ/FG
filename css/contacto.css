@@ -232,7 +232,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-weight: 100;
     color: #a4a4a4;
   }
   .contacto-wrapper .contact-container .column .sub-text .column a {
