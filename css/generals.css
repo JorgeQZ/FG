@@ -77,6 +77,226 @@ a {
 }
 
 @media screen and (min-width: 320px) {
+  .pagination-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    padding: 10px 0;
+    position: relative;
+  }
+  .pagination-container .button-container {
+    text-align: center;
+  }
+  .pagination-container .button-container .item {
+    padding: 5px 20px;
+    color: white;
+    font-size: 15px;
+    margin: 0 5px;
+    background-color: #ff9900;
+    text-transform: uppercase;
+    position: relative;
+    border: 1px solid #ff9900;
+  }
+  .pagination-container .button-container .item.current {
+    background-color: #fff;
+    color: #ff9900;
+  }
+  .pagination-container .button-container .item, .pagination-container .button-container .item:before {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .pagination-container .button-container .item:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #fff;
+    color: #ff9900;
+  }
+  .pagination-container .button-container .item.next {
+    padding-right: 25px;
+  }
+  .pagination-container .button-container .item.next:hover:before {
+    background-image: url("../img/right-color.png");
+  }
+  .pagination-container .button-container .item.next:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/right-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 4px;
+    top: 4px;
+  }
+  .pagination-container .button-container .item.prev {
+    padding-left: 25px;
+  }
+  .pagination-container .button-container .item.prev:hover:before {
+    background-image: url("../img/left-color.png");
+  }
+  .pagination-container .button-container .item.prev:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/left-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 4px;
+    top: 4px;
+  }
+  .pagination-container .pagination {
+    margin: 15px auto;
+    width: 300px;
+    height: 30px;
+    top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pagination-container .pagination .page-button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: 30px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .pagination-container .pagination .page-button-container .button {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+    background-color: #ff9900;
+    background-size: 55%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border: 1px solid #ff9900;
+  }
+  .pagination-container .pagination .page-button-container .button:hover {
+    background-color: #fff;
+  }
+  .pagination-container .pagination .page-button-container .button.prev {
+    background-image: url("../img/left-white.png");
+  }
+  .pagination-container .pagination .page-button-container .button.prev:hover {
+    background-image: url("../img/left-color.png");
+  }
+  .pagination-container .pagination .page-button-container .button.next {
+    background-image: url("../img/right-white.png");
+  }
+  .pagination-container .pagination .page-button-container .button.next:hover {
+    background-image: url("../img/right-color.png");
+  }
+  .pagination-container .pagination .page-button-container .numbered {
+    width: 40px;
+    height: 26px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #999999;
+    background-color: #fff;
+    color: #999999;
+  }
+  .pagination-container .pagination .total-number {
+    color: #999999;
+    font-size: 12px;
+    margin: 0px 4px;
+  }
+  .pagination-container .pagination .total-number span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .wrapper-content .rpwe-block ul {
+    list-style: none !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  .wrapper-content .rpwe-block li {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+  }
+  .wrapper-content .rpwe-block a {
+    display: inline !important;
+    text-decoration: none;
+    color: #ff9900;
+  }
+  .wrapper-content .rpwe-block h3 {
+    background: none !important;
+    clear: none;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1.6em;
+    color: #ff9900;
+  }
+  .wrapper-content .rpwe-thumb {
+    border: 1px solid #eee !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    margin: 2px 10px 2px 0;
+    padding: 3px !important;
+  }
+  .wrapper-content .rpwe-summary {
+    font-size: 12px;
+  }
+  .wrapper-content .rpwe-time {
+    color: #bbb;
+    font-size: 11px;
+  }
+  .wrapper-content .rpwe-comment {
+    color: #bbb;
+    font-size: 11px;
+    padding-left: 5px;
+  }
+  .wrapper-content .rpwe-alignleft {
+    display: inline;
+    float: left;
+  }
+  .wrapper-content .rpwe-alignright {
+    display: inline;
+    float: right;
+  }
+  .wrapper-content .rpwe-aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrapper-content .rpwe-clearfix:before,
+  .wrapper-content .rpwe-clearfix:after {
+    content: "";
+    display: table !important;
+  }
+  .wrapper-content .rpwe-clearfix:after {
+    clear: both;
+  }
+  .wrapper-content .rpwe-clearfix {
+    zoom: 1;
+  }
   .wrapper-content.blog {
     background-color: #fff;
   }
@@ -84,9 +304,13 @@ a {
     margin: 40px 0;
     margin-bottom: 50px;
   }
+  .wrapper-content.blog .post .column:first-child {
+    text-align: center;
+  }
   .wrapper-content.blog .post .column img {
     width: 100%;
     height: auto;
+    max-width: 200px;
   }
   .wrapper-content.blog .post .column .content .post-title {
     font-size: 20px;
@@ -174,6 +398,187 @@ a {
 }
 
 @media screen and (min-width: 990px) {
+  .pagination-container {
+    width: 100%;
+    height: 20px;
+    display: block;
+    margin: 15px 0;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .pagination-container .button-container .item {
+    padding: 2px 10px;
+    color: white;
+    font-size: 12px;
+    background-color: #ff9900;
+    text-transform: uppercase;
+    position: relative;
+    border: 1px solid #ff9900;
+  }
+  .pagination-container .button-container .item, .pagination-container .button-container .item:before {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .pagination-container .button-container .item:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #fff;
+    color: #ff9900;
+  }
+  .pagination-container .button-container .item.next {
+    padding-right: 25px;
+  }
+  .pagination-container .button-container .item.next:hover:before {
+    background-image: url("../img/right-color.png");
+  }
+  .pagination-container .button-container .item.next:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/right-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 4px;
+    top: 4px;
+  }
+  .pagination-container .button-container .item.prev {
+    padding-left: 25px;
+  }
+  .pagination-container .button-container .item.prev:hover:before {
+    background-image: url("../img/left-color.png");
+  }
+  .pagination-container .button-container .item.prev:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/left-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 4px;
+    top: 4px;
+  }
+  .pagination-container .pagination {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 20px;
+    margin: 0;
+    top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pagination-container .pagination .page-button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: 20px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .pagination-container .pagination .page-button-container .button {
+    display: inline-block;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    background-color: #ff9900;
+    background-size: 55%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border: 1px solid #ff9900;
+  }
+  .pagination-container .pagination .page-button-container .button:hover {
+    background-color: #fff;
+  }
+  .pagination-container .pagination .page-button-container .button.prev {
+    background-image: url("../img/left-white.png");
+  }
+  .pagination-container .pagination .page-button-container .button.prev:hover {
+    background-image: url("../img/left-color.png");
+  }
+  .pagination-container .pagination .page-button-container .button.next {
+    background-image: url("../img/right-white.png");
+  }
+  .pagination-container .pagination .page-button-container .button.next:hover {
+    background-image: url("../img/right-color.png");
+  }
+  .pagination-container .pagination .page-button-container .numbered {
+    width: 40px;
+    height: 18px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #999999;
+    background-color: #fff;
+    color: #999999;
+  }
+  .pagination-container .pagination .total-number {
+    color: #999999;
+    font-size: 12px;
+    margin: 0px 4px;
+  }
+  .pagination-container .pagination .total-number span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .wrapper-content .rpwe-block ul {
+    list-style: none !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  .wrapper-content .rpwe-block li {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+  }
+  .wrapper-content .rpwe-block a {
+    display: inline !important;
+    text-decoration: none;
+    color: #ff9900;
+  }
+  .wrapper-content .rpwe-block h3 {
+    background: none !important;
+    clear: none;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    font-weight: 900;
+    font-size: 12px !important;
+    line-height: 1.6em;
+    color: #ff9900;
+  }
   .wrapper-content.blog {
     background-color: #fff;
   }
@@ -193,9 +598,13 @@ a {
   .wrapper-content.blog .post .column {
     width: 50%;
   }
+  .wrapper-content.blog .post .column:first-child {
+    text-align: center;
+  }
   .wrapper-content.blog .post .column img {
     width: 90%;
     height: auto;
+    max-width: 500px;
   }
   .wrapper-content.blog .post .column .content .post-title {
     font-size: 20px;
@@ -216,6 +625,7 @@ a {
     text-align: center;
     color: #c2c2c2;
     width: 100px;
+    background-color: #fff;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }

@@ -12,10 +12,22 @@ Template Name: Blog Posts
 </div>
 
 <div class="wrapper-content blog">
-    <?php query_posts('post_type=post&post_status=publish&posts_per_page=3&paged='. get_query_var('paged')); ?>
-    <?php if( have_posts() ): ?>
+    <?php 
+    global $wp_query;
+    $paged = (get_query_var('paged')) ? absint( get_query_var('paged')) : 1;
+    
+    $showitems = 5;
+    $post_args = array(
+        'paged' => $paged, 
+        'post_type' => 'post',
+        'showposts' => $showitems,
+        'post_status' => 'publish',
+    );
+    $the_query = new WP_Query($post_args);
+    ?>
+    <?php if( $the_query->have_posts() ): ?>
 
-    <?php while( have_posts() ): the_post(); ?>
+    <?php while( $the_query->have_posts() ): $the_query->the_post(); ?>
     <div class="post" id="post-<?php get_the_ID(); ?>" <?php post_class(); ?>>
         <div class="column">
             <?php the_post_thumbnail('blog-post'); ?>
@@ -32,25 +44,56 @@ Template Name: Blog Posts
             </div>
         </div>
     </div>
-    <!-- <div id="post-<?php get_the_ID(); ?>" <?php post_class(); ?>>
+    <?php
+    endwhile;
+    $GLOBALS['wp_query']->max_num_pages = $the_query->max_num_pages;
+    $pages = $the_query->max_num_pages;
+    ?>
 
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( ); ?></a>
+    <div class="pagination-container">
 
-        <h2>
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        </h2>
+        <div class="button-container">
+            <?php if( $paged > 1 && $showitems < $pages ): ?>
+            <a href="<?php echo get_pagenum_link($paged - 1)?>" class="item prev">Anterior</a>
+            <?php endif; ?>
 
-        <span class="meta">
-            <strong><?php the_time('d'); ?></strong> /
-            <strong><?php the_time('M'); ?></strong>
-        </span>
+            <?php 
+                        for ($i=1; $i <= $pages; $i++){
+                            if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )){
+                                if($paged == $i): 
+                                    echo "<span class='item current'>".$i."</span>";
+                                else:
+                                    echo "<a href='".get_pagenum_link($i)."' class='item'>".$i."</a>";
+                                endif;
+                            }
+                        }
+                        ?>
+            <?php if( $paged < $pages && $showitems < $pages):?>
+            <a href="<?php echo get_pagenum_link($paged + 1)?>" class="item next">Siguiente</a>
+            <?php endif;?>
+        </div>
 
-        <?php the_excerpt(__('Continue reading »','example')); ?>
 
-    </div> -->
-    <!-- /#post-<?php get_the_ID(); ?> -->
 
-    <?php endwhile; ?>
+        <?php                     
+                    ?>
+        <div class="pagination">
+            <div class="page-button-container">
+
+
+                <div class="numbered">
+                    <?php echo $paged ?>
+                </div>
+
+
+            </div>
+
+            <div class="total-number"> de
+                <span> <?php  echo $the_query->max_num_pages; ?></span>
+            </div>
+        </div>
+    </div>
+
     <?php endif; wp_reset_query(); ?>
 </div>
 
