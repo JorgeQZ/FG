@@ -30,5 +30,5 @@ $(document).ready(function() {
         $('.nav-container').toggleClass('act');
     });
 
-
+    jQuery('.form-input .wpcf7-form-control-wrap, .wpcf7-form textarea, .wpcf7-form select, .form-row input[type="submit"]').unwrap();
 });

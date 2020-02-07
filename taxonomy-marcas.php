@@ -11,11 +11,11 @@
 <div class="wrapper-content blog">
     <?php
     $paged = (get_query_var('paged')) ? absint( get_query_var('paged')) : 1;
-    $showitems = 2;
+    $showitems = 8;
+    $range = 2;
     $post_args = array(
-        'paged' => get_query_var('paged'), 
+        'paged' => $paged, 
         'post_type' => 'productos',
-        'showposts' => 5,
         'post_status' => 'publish',
         'tax_query' => array(
             array(

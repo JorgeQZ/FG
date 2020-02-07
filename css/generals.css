@@ -19,8 +19,41 @@ a {
   text-decoration: none;
 }
 
+div.wpcf7 .ajax-loader {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .wpcf7-not-valid-tip,
+  span.wpcf7-not-valid-tip {
+    color: #f00;
+    font-size: .7rem;
+    font-weight: normal;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .wpcf7-not-valid-tip,
+  span.wpcf7-not-valid-tip {
+    color: #f00;
+    font-size: .7rem;
+    font-weight: normal;
+    display: block;
+    padding: 5px 0;
+    position: absolute;
+    top: 90%;
+  }
+}
+
 .wrapper-content {
   padding: 2% 6%;
+}
+
+.wrapper-page-content {
+  padding: 0 6%;
 }
 
 .banner {
@@ -77,7 +110,8 @@ a {
 }
 
 @media screen and (min-width: 320px) {
-  .pagination-container {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container,
+  .blog .pagination-container {
     width: 100%;
     height: auto;
     display: block;
@@ -85,10 +119,12 @@ a {
     padding: 10px 0;
     position: relative;
   }
-  .pagination-container .button-container {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container,
+  .blog .pagination-container .button-container {
     text-align: center;
   }
-  .pagination-container .button-container .item {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item,
+  .blog .pagination-container .button-container .item {
     padding: 5px 20px;
     color: white;
     font-size: 15px;
@@ -98,27 +134,34 @@ a {
     position: relative;
     border: 1px solid #ff9900;
   }
-  .pagination-container .button-container .item.current {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.current,
+  .blog .pagination-container .button-container .item.current {
     background-color: #fff;
     color: #ff9900;
   }
-  .pagination-container .button-container .item, .pagination-container .button-container .item:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item, .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item:before,
+  .blog .pagination-container .button-container .item,
+  .blog .pagination-container .button-container .item:before {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
-  .pagination-container .button-container .item:hover {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item:hover,
+  .blog .pagination-container .button-container .item:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
     background-color: #fff;
     color: #ff9900;
   }
-  .pagination-container .button-container .item.next {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.next,
+  .blog .pagination-container .button-container .item.next {
     padding-right: 25px;
   }
-  .pagination-container .button-container .item.next:hover:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.next:hover:before,
+  .blog .pagination-container .button-container .item.next:hover:before {
     background-image: url("../img/right-color.png");
   }
-  .pagination-container .button-container .item.next:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.next:before,
+  .blog .pagination-container .button-container .item.next:before {
     content: '';
     position: absolute;
     width: 12px;
@@ -129,13 +172,16 @@ a {
     right: 4px;
     top: 4px;
   }
-  .pagination-container .button-container .item.prev {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.prev,
+  .blog .pagination-container .button-container .item.prev {
     padding-left: 25px;
   }
-  .pagination-container .button-container .item.prev:hover:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.prev:hover:before,
+  .blog .pagination-container .button-container .item.prev:hover:before {
     background-image: url("../img/left-color.png");
   }
-  .pagination-container .button-container .item.prev:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.prev:before,
+  .blog .pagination-container .button-container .item.prev:before {
     content: '';
     position: absolute;
     width: 12px;
@@ -146,7 +192,8 @@ a {
     left: 4px;
     top: 4px;
   }
-  .pagination-container .pagination {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination,
+  .blog .pagination-container .pagination {
     margin: 15px auto;
     width: 300px;
     height: 30px;
@@ -161,7 +208,8 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .pagination-container .pagination .page-button-container {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container,
+  .blog .pagination-container .pagination .page-button-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -171,7 +219,8 @@ a {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .pagination-container .pagination .page-button-container .button {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button,
+  .blog .pagination-container .pagination .page-button-container .button {
     display: inline-block;
     position: relative;
     width: 20px;
@@ -187,22 +236,28 @@ a {
     transition: all 0.2s ease;
     border: 1px solid #ff9900;
   }
-  .pagination-container .pagination .page-button-container .button:hover {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button:hover,
+  .blog .pagination-container .pagination .page-button-container .button:hover {
     background-color: #fff;
   }
-  .pagination-container .pagination .page-button-container .button.prev {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button.prev,
+  .blog .pagination-container .pagination .page-button-container .button.prev {
     background-image: url("../img/left-white.png");
   }
-  .pagination-container .pagination .page-button-container .button.prev:hover {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button.prev:hover,
+  .blog .pagination-container .pagination .page-button-container .button.prev:hover {
     background-image: url("../img/left-color.png");
   }
-  .pagination-container .pagination .page-button-container .button.next {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button.next,
+  .blog .pagination-container .pagination .page-button-container .button.next {
     background-image: url("../img/right-white.png");
   }
-  .pagination-container .pagination .page-button-container .button.next:hover {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button.next:hover,
+  .blog .pagination-container .pagination .page-button-container .button.next:hover {
     background-image: url("../img/right-color.png");
   }
-  .pagination-container .pagination .page-button-container .numbered {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .numbered,
+  .blog .pagination-container .pagination .page-button-container .numbered {
     width: 40px;
     height: 26px;
     border-radius: 4px;
@@ -219,12 +274,14 @@ a {
     background-color: #fff;
     color: #999999;
   }
-  .pagination-container .pagination .total-number {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .total-number,
+  .blog .pagination-container .pagination .total-number {
     color: #999999;
     font-size: 12px;
     margin: 0px 4px;
   }
-  .pagination-container .pagination .total-number span {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .total-number span,
+  .blog .pagination-container .pagination .total-number span {
     font-size: 16px;
     font-weight: bold;
   }
@@ -398,7 +455,8 @@ a {
 }
 
 @media screen and (min-width: 990px) {
-  .pagination-container {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container,
+  .blog .pagination-container {
     width: 100%;
     height: 20px;
     display: block;
@@ -415,7 +473,8 @@ a {
             justify-content: center;
     position: relative;
   }
-  .pagination-container .button-container .item {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item,
+  .blog .pagination-container .button-container .item {
     padding: 2px 10px;
     color: white;
     font-size: 12px;
@@ -424,23 +483,29 @@ a {
     position: relative;
     border: 1px solid #ff9900;
   }
-  .pagination-container .button-container .item, .pagination-container .button-container .item:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item, .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item:before,
+  .blog .pagination-container .button-container .item,
+  .blog .pagination-container .button-container .item:before {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
-  .pagination-container .button-container .item:hover {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item:hover,
+  .blog .pagination-container .button-container .item:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
     background-color: #fff;
     color: #ff9900;
   }
-  .pagination-container .button-container .item.next {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.next,
+  .blog .pagination-container .button-container .item.next {
     padding-right: 25px;
   }
-  .pagination-container .button-container .item.next:hover:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.next:hover:before,
+  .blog .pagination-container .button-container .item.next:hover:before {
     background-image: url("../img/right-color.png");
   }
-  .pagination-container .button-container .item.next:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.next:before,
+  .blog .pagination-container .button-container .item.next:before {
     content: '';
     position: absolute;
     width: 12px;
@@ -451,13 +516,16 @@ a {
     right: 4px;
     top: 4px;
   }
-  .pagination-container .button-container .item.prev {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.prev,
+  .blog .pagination-container .button-container .item.prev {
     padding-left: 25px;
   }
-  .pagination-container .button-container .item.prev:hover:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.prev:hover:before,
+  .blog .pagination-container .button-container .item.prev:hover:before {
     background-image: url("../img/left-color.png");
   }
-  .pagination-container .button-container .item.prev:before {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .button-container .item.prev:before,
+  .blog .pagination-container .button-container .item.prev:before {
     content: '';
     position: absolute;
     width: 12px;
@@ -468,7 +536,8 @@ a {
     left: 4px;
     top: 4px;
   }
-  .pagination-container .pagination {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination,
+  .blog .pagination-container .pagination {
     position: absolute;
     top: 0;
     right: 0;
@@ -486,7 +555,8 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .pagination-container .pagination .page-button-container {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container,
+  .blog .pagination-container .pagination .page-button-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -496,7 +566,8 @@ a {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .pagination-container .pagination .page-button-container .button {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button,
+  .blog .pagination-container .pagination .page-button-container .button {
     display: inline-block;
     position: relative;
     width: 12px;
@@ -512,22 +583,28 @@ a {
     transition: all 0.2s ease;
     border: 1px solid #ff9900;
   }
-  .pagination-container .pagination .page-button-container .button:hover {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button:hover,
+  .blog .pagination-container .pagination .page-button-container .button:hover {
     background-color: #fff;
   }
-  .pagination-container .pagination .page-button-container .button.prev {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button.prev,
+  .blog .pagination-container .pagination .page-button-container .button.prev {
     background-image: url("../img/left-white.png");
   }
-  .pagination-container .pagination .page-button-container .button.prev:hover {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button.prev:hover,
+  .blog .pagination-container .pagination .page-button-container .button.prev:hover {
     background-image: url("../img/left-color.png");
   }
-  .pagination-container .pagination .page-button-container .button.next {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button.next,
+  .blog .pagination-container .pagination .page-button-container .button.next {
     background-image: url("../img/right-white.png");
   }
-  .pagination-container .pagination .page-button-container .button.next:hover {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .button.next:hover,
+  .blog .pagination-container .pagination .page-button-container .button.next:hover {
     background-image: url("../img/right-color.png");
   }
-  .pagination-container .pagination .page-button-container .numbered {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .page-button-container .numbered,
+  .blog .pagination-container .pagination .page-button-container .numbered {
     width: 40px;
     height: 18px;
     border-radius: 4px;
@@ -544,12 +621,14 @@ a {
     background-color: #fff;
     color: #999999;
   }
-  .pagination-container .pagination .total-number {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .total-number,
+  .blog .pagination-container .pagination .total-number {
     color: #999999;
     font-size: 12px;
     margin: 0px 4px;
   }
-  .pagination-container .pagination .total-number span {
+  .product-container .sliders-container .slider-tabs-content .tab .pagination-container .pagination .total-number span,
+  .blog .pagination-container .pagination .total-number span {
     font-size: 16px;
     font-weight: bold;
   }

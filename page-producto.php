@@ -5,7 +5,8 @@
  */
 global $wp_query;
 $paged = (get_query_var('paged')) ? absint( get_query_var('paged')) : 1;
-$showitems = 2;
+$showitems = 8;
+$range = 2;
 $parent_ID = $post->post_parent;
 $page_ID = get_the_ID();
 
@@ -73,7 +74,6 @@ if(!$featured_img){
                 $post_args = array(
                     'paged' => $paged, 
                     'post_type' => 'productos',
-                    'showposts' => 8,
                     'post_status' => 'publish',
                     'tax_query' => array(
                         array(
@@ -161,6 +161,17 @@ if(!$featured_img){
                     </div>
                 </div>
                 <?php
+                else: 
+                   
+                 
+                    echo '<center>';
+                    echo "<div class='owl-carousel owl-theme c-empty'>";
+                    
+                    echo '<h1>No hay productos en esta marca</h1>';
+                    
+                    echo "</div>";
+                    echo '</center>';
+                   
                 endif;
                 wp_reset_postdata();
                 ?>
@@ -188,6 +199,14 @@ $('.productos-carousel-tabs').owlCarousel({
             margin: 0
         }
     }
+});
+
+$('.c-empty').owlCarousel({
+    loop: false,
+    dots: false,
+    margin: 10,
+    center: true,
+    items: 1
 });
 </script>
 

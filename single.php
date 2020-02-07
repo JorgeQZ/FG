@@ -3,7 +3,7 @@
 <?php if(is_singular('post')): ?>
 
 <div class="banner-blog"
-    style="background-image: url(http://localhost:8888/fg/wp-content/uploads/2020/02/blog-banner.jpg)">
+    style="background-image: url(<?php echo get_site_url()?>/wp-content/uploads/2020/02/blog-banner.jpg)">
     <div class="banner-tit">
         Blog y noticias
     </div>

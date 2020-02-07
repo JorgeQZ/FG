@@ -20,8 +20,45 @@ a {
     text-decoration: none;
 }
 
+div.wpcf7 .ajax-loader {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.wp-block {
+    max-width: 1280px;
+}
+
+@media screen and (min-width: 320px) {
+    .wpcf7-not-valid-tip,
+    span.wpcf7-not-valid-tip {
+        color: #f00;
+        font-size: .7rem;
+        font-weight: normal;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .wpcf7-not-valid-tip,
+    span.wpcf7-not-valid-tip {
+        color: #f00;
+        font-size: .7rem;
+        font-weight: normal;
+        display: block;
+        padding: 5px 0;
+        position: absolute;
+        top: 90%;
+    }
+}
+
 .wrapper-content {
     padding: 2% 6%;
+}
+
+.wrapper-page-content {
+    padding: 0 6%;
 }
 
 .banner {
@@ -68,139 +105,142 @@ a {
 }
 
 @media screen and (min-width: 320px) {
-    .pagination-container {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 15px 0;
-        padding: 10px 0;
-        position: relative;
-        .button-container {
-            text-align: center;
-            .item {
-                padding: 5px 20px;
-                color: white;
-                font-size: 15px;
-                margin: 0 5px;
-                background-color: $accent-color;
-                text-transform: uppercase;
-                position: relative;
-                border: 1px solid $accent-color;
-                &.current {
-                    background-color: #fff;
-                    color: $accent-color;
-                }
-                &,
-                &:before {
-                    transition: $time;
-                }
-                &:hover {
-                    box-shadow: none;
-                    background-color: #fff;
-                    color: $accent-color;
-                }
-                &.next {
-                    padding-right: 25px;
-                    &:hover {
-                        &:before {
-                            background-image: url('../img/right-color.png');
-                        }
-                    }
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        width: 12px;
-                        height: 12px;
-                        background-image: url('../img/right-white.png');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        right: 4px;
-                        top: 4px;
-                    }
-                }
-                &.prev {
-                    padding-left: 25px;
-                    &:hover {
-                        &:before {
-                            background-image: url('../img/left-color.png');
-                        }
-                    }
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        width: 12px;
-                        height: 12px;
-                        background-image: url('../img/left-white.png');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        left: 4px;
-                        top: 4px;
-                    }
-                }
-            }
-        }
-        .pagination {
-            margin: 15px auto;
-            width: 300px;
-            height: 30px;
-            top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .page-button-container {
-                display: flex;
-                width: auto;
-                height: 30px;
-                justify-content: flex-end;
-                .button {
-                    display: inline-block;
-                    position: relative;
-                    width: 20px;
-                    height: 20px;
-                    margin: 0 4px;
+    .product-container .sliders-container .slider-tabs-content .tab,
+    .blog {
+        .pagination-container {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px 0;
+            padding: 10px 0;
+            position: relative;
+            .button-container {
+                text-align: center;
+                .item {
+                    padding: 5px 20px;
+                    color: white;
+                    font-size: 15px;
+                    margin: 0 5px;
                     background-color: $accent-color;
-                    background-size: 55%;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    padding: 3px;
-                    cursor: pointer;
-                    transition: $time;
+                    text-transform: uppercase;
+                    position: relative;
                     border: 1px solid $accent-color;
-                    &:hover {
+                    &.current {
                         background-color: #fff;
+                        color: $accent-color;
                     }
-                    &.prev {
-                        background-image: url('../img/left-white.png');
-                        &:hover {
-                            background-image: url('../img/left-color.png');
-                        }
+                    &,
+                    &:before {
+                        transition: $time;
+                    }
+                    &:hover {
+                        box-shadow: none;
+                        background-color: #fff;
+                        color: $accent-color;
                     }
                     &.next {
-                        background-image: url('../img/right-white.png');
+                        padding-right: 25px;
                         &:hover {
-                            background-image: url('../img/right-color.png');
+                            &:before {
+                                background-image: url('../img/right-color.png');
+                            }
+                        }
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            background-image: url('../img/right-white.png');
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            right: 4px;
+                            top: 4px;
+                        }
+                    }
+                    &.prev {
+                        padding-left: 25px;
+                        &:hover {
+                            &:before {
+                                background-image: url('../img/left-color.png');
+                            }
+                        }
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            background-image: url('../img/left-white.png');
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            left: 4px;
+                            top: 4px;
                         }
                     }
                 }
-                .numbered {
-                    width: 40px;
-                    height: 26px;
-                    border-radius: 4px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid #999999;
-                    background-color: #fff;
-                    color: #999999;
-                }
             }
-            .total-number {
-                color: #999999;
-                font-size: 12px;
-                margin: 0px 4px;
-                span {
-                    font-size: 16px;
-                    font-weight: bold;
+            .pagination {
+                margin: 15px auto;
+                width: 300px;
+                height: 30px;
+                top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .page-button-container {
+                    display: flex;
+                    width: auto;
+                    height: 30px;
+                    justify-content: flex-end;
+                    .button {
+                        display: inline-block;
+                        position: relative;
+                        width: 20px;
+                        height: 20px;
+                        margin: 0 4px;
+                        background-color: $accent-color;
+                        background-size: 55%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        padding: 3px;
+                        cursor: pointer;
+                        transition: $time;
+                        border: 1px solid $accent-color;
+                        &:hover {
+                            background-color: #fff;
+                        }
+                        &.prev {
+                            background-image: url('../img/left-white.png');
+                            &:hover {
+                                background-image: url('../img/left-color.png');
+                            }
+                        }
+                        &.next {
+                            background-image: url('../img/right-white.png');
+                            &:hover {
+                                background-image: url('../img/right-color.png');
+                            }
+                        }
+                    }
+                    .numbered {
+                        width: 40px;
+                        height: 26px;
+                        border-radius: 4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid #999999;
+                        background-color: #fff;
+                        color: #999999;
+                    }
+                }
+                .total-number {
+                    color: #999999;
+                    font-size: 12px;
+                    margin: 0px 4px;
+                    span {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -381,139 +421,142 @@ a {
 }
 
 @media screen and (min-width: 990px) {
-    .pagination-container {
-        width: 100%;
-        height: 20px;
-        display: block;
-        margin: 15px 0;
-        padding: 10px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        .button-container {
-            .item {
-                padding: 2px 10px;
-                color: white;
-                font-size: 12px;
-                background-color: $accent-color;
-                text-transform: uppercase;
-                position: relative;
-                border: 1px solid $accent-color;
-                &,
-                &:before {
-                    transition: $time;
-                }
-                &:hover {
-                    box-shadow: none;
-                    background-color: #fff;
-                    color: $accent-color;
-                }
-                &.next {
-                    padding-right: 25px;
-                    &:hover {
-                        &:before {
-                            background-image: url('../img/right-color.png');
-                        }
-                    }
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        width: 12px;
-                        height: 12px;
-                        background-image: url('../img/right-white.png');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        right: 4px;
-                        top: 4px;
-                    }
-                }
-                &.prev {
-                    padding-left: 25px;
-                    &:hover {
-                        &:before {
-                            background-image: url('../img/left-color.png');
-                        }
-                    }
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        width: 12px;
-                        height: 12px;
-                        background-image: url('../img/left-white.png');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        left: 4px;
-                        top: 4px;
-                    }
-                }
-            }
-        }
-        .pagination {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 300px;
+    .product-container .sliders-container .slider-tabs-content .tab,
+    .blog {
+        .pagination-container {
+            width: 100%;
             height: 20px;
-            margin: 0;
-            top: 10px;
+            display: block;
+            margin: 15px 0;
+            padding: 10px 0;
             display: flex;
-            justify-content: flex-end;
             align-items: center;
-            .page-button-container {
-                display: flex;
-                width: auto;
-                height: 20px;
-                justify-content: flex-end;
-                .button {
-                    display: inline-block;
-                    position: relative;
-                    width: 12px;
-                    height: 12px;
-                    margin: 0 4px;
+            justify-content: center;
+            position: relative;
+            .button-container {
+                .item {
+                    padding: 2px 10px;
+                    color: white;
+                    font-size: 12px;
                     background-color: $accent-color;
-                    background-size: 55%;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    padding: 3px;
-                    cursor: pointer;
-                    transition: $time;
+                    text-transform: uppercase;
+                    position: relative;
                     border: 1px solid $accent-color;
-                    &:hover {
-                        background-color: #fff;
+                    &,
+                    &:before {
+                        transition: $time;
                     }
-                    &.prev {
-                        background-image: url('../img/left-white.png');
-                        &:hover {
-                            background-image: url('../img/left-color.png');
-                        }
+                    &:hover {
+                        box-shadow: none;
+                        background-color: #fff;
+                        color: $accent-color;
                     }
                     &.next {
-                        background-image: url('../img/right-white.png');
+                        padding-right: 25px;
                         &:hover {
-                            background-image: url('../img/right-color.png');
+                            &:before {
+                                background-image: url('../img/right-color.png');
+                            }
+                        }
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            background-image: url('../img/right-white.png');
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            right: 4px;
+                            top: 4px;
+                        }
+                    }
+                    &.prev {
+                        padding-left: 25px;
+                        &:hover {
+                            &:before {
+                                background-image: url('../img/left-color.png');
+                            }
+                        }
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            background-image: url('../img/left-white.png');
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            left: 4px;
+                            top: 4px;
                         }
                     }
                 }
-                .numbered {
-                    width: 40px;
-                    height: 18px;
-                    border-radius: 4px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid #999999;
-                    background-color: #fff;
-                    color: #999999;
-                }
             }
-            .total-number {
-                color: #999999;
-                font-size: 12px;
-                margin: 0px 4px;
-                span {
-                    font-size: 16px;
-                    font-weight: bold;
+            .pagination {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 300px;
+                height: 20px;
+                margin: 0;
+                top: 10px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .page-button-container {
+                    display: flex;
+                    width: auto;
+                    height: 20px;
+                    justify-content: flex-end;
+                    .button {
+                        display: inline-block;
+                        position: relative;
+                        width: 12px;
+                        height: 12px;
+                        margin: 0 4px;
+                        background-color: $accent-color;
+                        background-size: 55%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        padding: 3px;
+                        cursor: pointer;
+                        transition: $time;
+                        border: 1px solid $accent-color;
+                        &:hover {
+                            background-color: #fff;
+                        }
+                        &.prev {
+                            background-image: url('../img/left-white.png');
+                            &:hover {
+                                background-image: url('../img/left-color.png');
+                            }
+                        }
+                        &.next {
+                            background-image: url('../img/right-white.png');
+                            &:hover {
+                                background-image: url('../img/right-color.png');
+                            }
+                        }
+                    }
+                    .numbered {
+                        width: 40px;
+                        height: 18px;
+                        border-radius: 4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid #999999;
+                        background-color: #fff;
+                        color: #999999;
+                    }
+                }
+                .total-number {
+                    color: #999999;
+                    font-size: 12px;
+                    margin: 0px 4px;
+                    span {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
                 }
             }
         }

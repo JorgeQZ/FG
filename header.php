@@ -49,12 +49,19 @@
             <div class="header-social-container">
                 <div class="phones-container">
                     <div class="phones-numbers">
+                        <?php  if ( is_active_sidebar( 'header-telefonos' ) ) : ?>
+                        <div id="post-sidebar" class="widget-area" role="complementary">
+                            <?php dynamic_sidebar( 'header-telefonos' ); ?>
+                        </div>
+                        <?php else: ?>
                         <a href="tel:+52 (81) 19 33 77 54">
                             +52 (81) 19 33 77 54
                         </a>
                         <a href="tel:+52 (81) 20 86 29 29">
                             +52 (81) 20 86 29 29
                         </a>
+                        <?php endif; ?>
+
                     </div>
                     <div class="phones-icon">
                         <img src="<?php echo get_template_directory_uri().'/img/phone.png'?>" alt="">
@@ -62,6 +69,11 @@
                     </div>
                 </div>
                 <div class="social-links">
+                    <?php  if ( is_active_sidebar( 'header-social-icons' ) ) : ?>
+
+                    <?php dynamic_sidebar( 'header-social-icons' ); ?>
+
+                    <?php else: ?>
                     <a href="#" target="_blank">
                         <div class="item">
                             <img src="<?php echo get_template_directory_uri().'/img/icon-whatsapp.png'?>" alt="">
@@ -82,11 +94,23 @@
                             <img src="<?php echo get_template_directory_uri().'/img/icon-facebook.png'?>" alt="">
                         </div>
                     </a>
+                    <?php endif; ?>
+
                 </div>
             </div>
         </div>
     </header>
     <div class="mobile-phones">
-        <a href="tel:+52 (81) 1933 7754">+52 (81) 1933 7754</a>
-        <a href="tel:+52 (81) 2086 2929">+52 (81) 2086 2929</a>
+        <?php  if ( is_active_sidebar( 'header-telefonos' ) ) : ?>
+        <div id="post-sidebar" class="widget-area" role="complementary">
+            <?php dynamic_sidebar( 'header-telefonos' ); ?>
+        </div>
+        <?php else: ?>
+        <a href="tel:+52 (81) 19 33 77 54">
+            +52 (81) 19 33 77 54
+        </a>
+        <a href="tel:+52 (81) 20 86 29 29">
+            +52 (81) 20 86 29 29
+        </a>
+        <?php endif; ?>
     </div>

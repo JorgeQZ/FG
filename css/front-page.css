@@ -452,7 +452,8 @@
     text-align: center;
   }
   .home-wrapper .contact-container .column .form .form-row {
-    margin-bottom: 10px;
+    margin-bottom: 35px;
+    position: relative;
   }
   .home-wrapper .contact-container .column .form .form-row .form-input {
     width: 100%;
@@ -465,7 +466,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     background-color: #f5f5f5;
   }
   .home-wrapper .contact-container .column .form .form-row .form-input .icon {
@@ -474,6 +475,7 @@
     margin-left: 10px;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-top: 5px;
   }
   .home-wrapper .contact-container .column .form .form-row .form-input .icon.person {
     background-image: url("../img/icon-person.png");
@@ -513,6 +515,7 @@
     font-size: 18px;
     text-transform: uppercase;
     margin: 0 auto;
+    margin-top: 20px;
     background-color: #ff9900;
     border: 1px solid #ff9900;
     border-bottom: 1px solid #ff7200;
@@ -630,10 +633,10 @@
   .home-wrapper .sliders-container .slider-tabs-content .tab.active {
     -webkit-animation-name: active;
             animation-name: active;
-    -webkit-animation-duration: .8s;
-            animation-duration: .8s;
-    -webkit-animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-            animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    -webkit-animation-duration: 1.3s;
+            animation-duration: 1.3s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
   }
@@ -689,9 +692,10 @@
   }
   .home-wrapper .sliders-container .slider-tabs-content .tab .item .text .description {
     display: block;
-    font-weight: thin;
+    font-weight: 300;
     font-size: 12px;
     text-align: left;
+    min-height: 80px;
   }
   .home-wrapper .sliders-container .slider-tabs-content .tab a .ver-mas {
     background-color: #ff9900;
@@ -978,6 +982,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 10px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1031,6 +1036,7 @@
     font-size: 18px;
     text-transform: uppercase;
     margin: 0 auto;
+    margin-top: 20px;
     background-color: #ff9900;
     border: 1px solid #ff9900;
     border-bottom: 1px solid #ff7200;

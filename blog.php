@@ -15,12 +15,11 @@ Template Name: Blog Posts
     <?php 
     global $wp_query;
     $paged = (get_query_var('paged')) ? absint( get_query_var('paged')) : 1;
-    
-    $showitems = 5;
+    $range = 2;
+    $showitems = 8;
     $post_args = array(
         'paged' => $paged, 
         'post_type' => 'post',
-        'showposts' => $showitems,
         'post_status' => 'publish',
     );
     $the_query = new WP_Query($post_args);
@@ -34,7 +33,9 @@ Template Name: Blog Posts
         </div>
         <div class="column">
             <div class="content">
-                <div class="post-title"><?php the_title();?></div>
+                <a href="<?php the_permalink(); ?>">
+                    <div class="post-title"><?php the_title();?></div>
+                </a>
                 <div class="desc">
                     <?php the_excerpt(); ?>
                 </div>
@@ -48,6 +49,7 @@ Template Name: Blog Posts
     endwhile;
     $GLOBALS['wp_query']->max_num_pages = $the_query->max_num_pages;
     $pages = $the_query->max_num_pages;
+
     ?>
 
     <div class="pagination-container">
