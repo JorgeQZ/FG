@@ -27,10 +27,13 @@ Template Name: Blog Posts
     <?php if( $the_query->have_posts() ): ?>
 
     <?php while( $the_query->have_posts() ): $the_query->the_post(); ?>
-    <div class="post" id="post-<?php get_the_ID(); ?>" <?php post_class(); ?>>
+    <div class="post" id="post-<?php echo get_the_ID(); ?>" <?php post_class(); ?>>
         <div class="column">
-            <?php the_post_thumbnail('blog-post'); ?>
+            <a href="<?php the_permalink(); ?>">
+                <?php the_post_thumbnail('blog-post'); ?>
+            </a>
         </div>
+
         <div class="column">
             <div class="content">
                 <a href="<?php the_permalink(); ?>">

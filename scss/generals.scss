@@ -262,6 +262,10 @@ div.wpcf7 .ajax-loader {
                 display: inline !important;
                 text-decoration: none;
                 color: #ff9900;
+                transition: $time;
+                &:hover {
+                    color: $accent-alternate;
+                }
             }
             h3 {
                 background: none !important;
@@ -272,6 +276,10 @@ div.wpcf7 .ajax-loader {
                 font-size: 18px;
                 line-height: 1.6em;
                 color: #ff9900;
+                transition: $time;
+                &:hover {
+                    color: $accent-alternate;
+                }
             }
         }
         .rpwe-thumb {
@@ -328,7 +336,7 @@ div.wpcf7 .ajax-loader {
                     img {
                         width: 100%;
                         height: auto;
-                        max-width: 200px;
+                        max-width: 500px;
                     }
                     .content {
                         .post-title {
@@ -613,6 +621,10 @@ div.wpcf7 .ajax-loader {
                             font-size: 20px;
                             font-weight: bold;
                             color: $accent-color;
+                            transition: $time;
+                            &:hover {
+                                color: $accent-alternate;
+                            }
                         }
                         .desc {
                             padding: 20px 0;
